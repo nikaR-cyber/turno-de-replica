@@ -1,0 +1,61 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: simple
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+
+  - name: "trama-y-drama"
+    label: "La Trama y el Drama"
+    files:
+      - name: "entradas"
+        label: "Entradas de La Trama y el Drama"
+        file: "content/trama-y-drama.json"
+        fields:
+          - label: "Entradas"
+            name: "entries"
+            widget: "list"
+            label_singular: "Entrada"
+            summary: "{{title}}"
+            fields:
+              - {label: "Categoría", name: "eyebrow", widget: "string", default: "Newsletter", hint: "Ej. Newsletter, Debate, Reseña con salseo, Recomendación"}
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Texto", name: "text", widget: "text"}
+
+  - name: "museo-literario"
+    label: "Museo Literario"
+    files:
+      - name: "entradas"
+        label: "Entradas del Museo Literario"
+        file: "content/museo-literario.json"
+        fields:
+          - label: "Entradas"
+            name: "entries"
+            widget: "list"
+            label_singular: "Entrada"
+            summary: "{{title}}"
+            fields:
+              - {label: "Categoría", name: "eyebrow", widget: "string", default: "Pieza del mes", hint: "Ej. Pieza del mes, Dato curioso, Reliquia, Curiosidad histórica"}
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Texto", name: "text", widget: "text"}
+
+  - name: "taller-escritura"
+    label: "Taller de Escritura"
+    files:
+      - name: "entradas"
+        label: "Entradas del Taller de Escritura"
+        file: "content/taller-escritura.json"
+        fields:
+          - label: "Entradas"
+            name: "entries"
+            widget: "list"
+            label_singular: "Entrada"
+            summary: "{{title}}"
+            fields:
+              - {label: "Categoría", name: "eyebrow", widget: "string", default: "Ejercicio", hint: "Ej. Ejercicio, Consejo de oficio, Bloqueo creativo, Recursos"}
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Texto", name: "text", widget: "text"}
