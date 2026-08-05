@@ -1,0 +1,5 @@
+/museo/*    /museo-literario-entrada.html?slug=:splat    200
+/taller/*   /taller-de-escritura-entrada.html?slug=:splat    200
+/revista/*  /la-trama-y-el-drama-entrada.html?slug=:splat    200
+/club-de-la-trama-y-el-drama/*  /club-de-la-trama-y-el-drama-entrada.html?slug=:splat    200
+/legal/*    /legal-documento.html?slug=:splat    200

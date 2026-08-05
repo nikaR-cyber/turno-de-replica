@@ -9,6 +9,8 @@
   --sage-deep:#77937a;
   --gold:#c9a24b;
   --gold-light:#e3c785;
+  --coral:#e8794f;
+  --coral-deep:#d1602f;
   --shadow: 0 10px 30px rgba(60,42,32,0.08);
 }
 
@@ -146,6 +148,7 @@ h1,h2,.logo-serif,.badge{
 }
 .badge-rose{background:linear-gradient(180deg,#d38a93,var(--rose-deep));}
 .badge-sage{background:linear-gradient(180deg,#9cb896,var(--sage-deep));}
+.badge-coral{background:linear-gradient(180deg,#ee9269,var(--coral-deep));}
 
 /* ---------- hero ---------- */
 main{max-width:960px; margin:0 auto; padding:0 20px 20px;}
@@ -249,7 +252,7 @@ h1{
 /* ---------- link cards (Inicio) ---------- */
 .link-cards{
   display:grid;
-  grid-template-columns:repeat(3, 1fr);
+  grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
   gap:24px;
   margin-bottom:40px;
 }
@@ -337,6 +340,284 @@ h1{
   margin:0;
   line-height:1.55;
 }
+
+/* clickable content cards (real navigation) */
+a.content-item{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+  cursor:pointer;
+  transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+a.content-item:hover, a.content-item:focus-visible{
+  transform:translateY(-3px);
+  box-shadow:0 14px 30px rgba(60,42,32,0.12);
+}
+.content-item-image{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-bottom:16px;
+}
+.content-item-meta{
+  font-size:0.92rem;
+  color:var(--sage-deep);
+  font-style:italic;
+  margin-bottom:8px !important;
+}
+.content-item-read{
+  display:inline-block;
+  margin-top:14px;
+  color:var(--rose-deep);
+  font-family:'Playfair Display', serif;
+  font-style:italic;
+  font-weight:600;
+  font-size:0.98rem;
+}
+
+/* empty state */
+.empty-state{
+  grid-column:1 / -1;
+  text-align:center;
+  padding:50px 20px;
+  color:var(--ink-soft);
+  font-style:italic;
+  font-size:1.15rem;
+}
+.empty-state p{ margin:6px 0; }
+
+/* individual entry detail pages */
+.entry-detail{
+  max-width:720px;
+  margin:0 auto 50px;
+  background:#fffdf8;
+  border:1.5px solid var(--gold-light);
+  border-radius:20px;
+  box-shadow:var(--shadow);
+  padding:44px 34px;
+}
+.entry-detail-image{
+  width:100%;
+  max-height:340px;
+  object-fit:cover;
+  border-radius:14px;
+  margin-bottom:22px;
+}
+.entry-detail h1{
+  font-size:clamp(2rem, 5vw, 2.6rem);
+  margin:14px 0 8px;
+  color:var(--ink);
+}
+.entry-detail-meta{
+  color:var(--sage-deep);
+  font-style:italic;
+  margin-bottom:22px;
+}
+.entry-detail-body p{
+  font-size:1.15rem;
+  line-height:1.7;
+  color:var(--ink);
+  margin:0 0 18px;
+}
+.entry-detail-tags{
+  margin-top:24px;
+  font-size:0.95rem;
+  color:var(--ink-soft);
+  font-style:italic;
+}
+
+.entry-image-credit{
+  font-size:0.85rem;
+  color:var(--ink-soft);
+  font-style:italic;
+  margin:-14px 0 22px !important;
+  text-align:right;
+}
+.entry-image-credit a{ color:inherit; }
+
+.section-search{
+  max-width:520px;
+  margin:0 auto 30px;
+  text-align:center;
+}
+.section-search-label{
+  display:block;
+  font-family:'Playfair Display', serif;
+  font-style:italic;
+  color:var(--ink-soft);
+  font-size:0.95rem;
+  margin-bottom:8px;
+}
+.section-search input[type="search"]{
+  width:100%;
+  padding:12px 20px;
+  border-radius:999px;
+  border:1.5px solid var(--gold-light);
+  background:#fffdf8;
+  font-family:'Cormorant Garamond', serif;
+  font-size:1.1rem;
+  color:var(--ink);
+  box-shadow:var(--shadow);
+}
+.section-search input[type="search"]:focus-visible{
+  outline:2px solid var(--coral-deep);
+  outline-offset:2px;
+}
+
+/* ---------- panel legal ---------- */
+.legal-trigger{
+  display:inline-block;
+  margin-top:18px;
+  background:none;
+  border:none;
+  border-bottom:1px solid var(--ink-soft);
+  color:var(--ink-soft);
+  font-family:'Cormorant Garamond', serif;
+  font-size:0.95rem;
+  letter-spacing:0.04em;
+  cursor:pointer;
+  padding:2px 0;
+}
+.legal-trigger:hover, .legal-trigger:focus-visible{ color:var(--rose-deep); border-color:var(--rose-deep); }
+
+.legal-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(60,42,32,0.35);
+  z-index:90;
+}
+
+.legal-panel{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  width:min(360px, 88vw);
+  background:var(--cream);
+  border-left:1.5px solid var(--gold-light);
+  box-shadow:-14px 0 30px rgba(60,42,32,0.18);
+  z-index:91;
+  display:flex;
+  flex-direction:column;
+  padding:26px 22px;
+  overflow-y:auto;
+}
+.legal-panel-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:18px;
+  padding-bottom:14px;
+  border-bottom:1px solid var(--gold-light);
+}
+.legal-panel-header h2{
+  font-family:'Playfair Display', serif;
+  font-size:1.3rem;
+  margin:0;
+  color:var(--ink);
+}
+.legal-close{
+  background:none;
+  border:none;
+  font-size:1.2rem;
+  color:var(--ink-soft);
+  cursor:pointer;
+  line-height:1;
+  padding:4px 8px;
+  border-radius:8px;
+}
+.legal-close:hover, .legal-close:focus-visible{ color:var(--rose-deep); background:rgba(201,162,75,0.12); }
+
+.legal-panel-list{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+.legal-panel-list a{
+  display:block;
+  padding:12px 10px;
+  color:var(--ink);
+  text-decoration:none;
+  font-size:1.05rem;
+  border-radius:10px;
+  border-bottom:1px solid rgba(201,162,75,0.25);
+}
+.legal-panel-list a:hover, .legal-panel-list a:focus-visible{
+  background:rgba(201,162,75,0.12);
+  color:var(--rose-deep);
+}
+.legal-panel-loading, .legal-panel-empty{
+  color:var(--ink-soft);
+  font-style:italic;
+  padding:10px;
+}
+
+body.legal-panel-open{ overflow:hidden; }
+
+.content-item-eyebrow-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:8px;
+}
+.content-item-eyebrow-row .eyebrow{ margin-bottom:0; }
+.featured-badge{
+  display:inline-block;
+  font-size:0.78rem;
+  font-weight:700;
+  letter-spacing:0.03em;
+  color:#fff;
+  background:linear-gradient(180deg,#ee9269,var(--coral-deep));
+  padding:3px 10px;
+  border-radius:999px;
+}
+.featured-badge-detail{ margin-left:8px; }
+.content-item-subtitle{
+  font-style:italic;
+  color:var(--ink-soft);
+  font-size:1rem;
+  margin:-4px 0 10px !important;
+}
+
+.entry-detail-badges{ margin-bottom:6px; }
+.entry-detail-subtitle{
+  font-style:italic;
+  font-size:1.25rem;
+  color:var(--ink-soft);
+  margin:0 0 12px;
+}
+.entry-body-image{
+  width:100%;
+  border-radius:14px;
+  margin:6px 0 18px;
+}
+.entry-detail-links{
+  margin-top:30px;
+  padding-top:20px;
+  border-top:1px solid var(--gold-light);
+}
+.entry-detail-links h4{
+  font-family:'Playfair Display', serif;
+  font-size:1.05rem;
+  margin:0 0 10px;
+  color:var(--ink);
+}
+.entry-detail-links ul{
+  margin:0;
+  padding-left:20px;
+}
+.entry-detail-links li{ margin-bottom:6px; }
+.entry-detail-links a{ color:var(--rose-deep); }
+
+/* identidad propia de El Club de la Trama y el Drama dentro de Turno de Réplica */
+.club-theme .badge-rose{ background:linear-gradient(180deg,#ee9269,var(--coral-deep)); }
+.club-theme .content-item-read{ color:var(--coral-deep); }
+.club-theme a.content-item:hover, .club-theme a.content-item:focus-visible{
+  box-shadow:0 14px 30px rgba(209,96,47,0.18);
+}
+.club-theme .divider-heart{ color:var(--coral-deep); }
 
 .cta-block{
   text-align:center;
