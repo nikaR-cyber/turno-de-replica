@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "eyebrow": "Newsletter",
+      "title": "El chisme de esta semana",
+      "text": "Aquí irá el resumen del último newsletter: qué libro nos rompió el corazón, qué trope está en boca de todo el club."
+    },
+    {
+      "eyebrow": "Debate",
+      "title": "¿Slow burn o insta-love?",
+      "text": "Espacio para el debate abierto de la semana, con las opiniones más picantes de las lectoras del club."
+    },
+    {
+      "eyebrow": "Reseña con salseo",
+      "title": "El libro que dividió al club",
+      "text": "Una reseña sin filtros de la última lectura conjunta, con spoilers avisados y mucha opinión."
+    },
+    {
+      "eyebrow": "Recomendación",
+      "title": "Si te gustó esto, lee esto",
+      "text": "Recomendaciones cruzadas para quienes ya devoraron el libro del mes y piden más."
+    }
+  ]
+}

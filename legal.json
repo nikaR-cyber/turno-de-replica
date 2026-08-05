@@ -1,0 +1,94 @@
+{
+  "entries": [
+    {
+      "active": true,
+      "order": 1,
+      "title": "Aviso Legal",
+      "slug": "aviso-legal",
+      "version": "",
+      "effective_date": "",
+      "content": "[PENDIENTE: pega aquí el texto de Aviso Legal que tú has redactado. Incluirá los datos identificativos del responsable — nombre/razón social, NIF/CIF, domicilio, correo de contacto — que Claude no debe inventar bajo ninguna circunstancia.]"
+    },
+    {
+      "active": true,
+      "order": 2,
+      "title": "Contacto legal, privacidad y derechos",
+      "slug": "contacto-legal",
+      "version": "",
+      "effective_date": "",
+      "content": "[PENDIENTE: pega aquí el canal de contacto para cuestiones legales, de privacidad y ejercicio de derechos — por ejemplo, la dirección de correo electrónico destinada a ello.]"
+    },
+    {
+      "active": true,
+      "order": 3,
+      "title": "Política de Privacidad",
+      "slug": "politica-de-privacidad",
+      "version": "",
+      "effective_date": "",
+      "content": "[PENDIENTE: pega aquí tu Política de Privacidad. Actualmente la web no recoge datos personales de las personas visitantes de forma directa (sin formularios, cuentas ni newsletter todavía), aunque el proveedor de alojamiento (Netlify) puede registrar direcciones IP como parte de su funcionamiento técnico habitual.]"
+    },
+    {
+      "active": true,
+      "order": 4,
+      "title": "Términos y Condiciones de Uso",
+      "slug": "terminos-y-condiciones",
+      "version": "",
+      "effective_date": "",
+      "content": "[PENDIENTE: pega aquí los Términos y Condiciones de Uso del sitio.]"
+    },
+    {
+      "active": true,
+      "order": 5,
+      "title": "Propiedad Intelectual",
+      "slug": "propiedad-intelectual",
+      "version": "",
+      "effective_date": "",
+      "content": "[PENDIENTE: pega aquí la Política de Propiedad Intelectual y derechos de autor.]"
+    },
+    {
+      "active": false,
+      "order": 6,
+      "title": "Política de Cookies",
+      "slug": "politica-de-cookies",
+      "version": "",
+      "effective_date": "",
+      "content": "[PENDIENTE — NO ACTIVAR TODAVÍA: la web no instala ninguna cookie no esencial ni herramienta de analítica o seguimiento en este momento. Activa este documento (campo 'Publicada' en el panel) únicamente cuando se incorpore alguna tecnología que lo requiera, y previamente con el banner de consentimiento correspondiente.]"
+    },
+    {
+      "active": false,
+      "order": 7,
+      "title": "Condiciones de Uso de la Comunidad",
+      "slug": "condiciones-comunidad",
+      "version": "",
+      "effective_date": "",
+      "content": "[PENDIENTE — NO ACTIVAR TODAVÍA: este documento corresponde a la fase de Comunidad/Muro, que aún no se ha implementado.]"
+    },
+    {
+      "active": false,
+      "order": 8,
+      "title": "Normas de Publicación y Convivencia",
+      "slug": "normas-de-convivencia",
+      "version": "",
+      "effective_date": "",
+      "content": "[PENDIENTE — NO ACTIVAR TODAVÍA: este documento corresponde a la fase de Comunidad/Muro, que aún no se ha implementado.]"
+    },
+    {
+      "active": false,
+      "order": 9,
+      "title": "Política de Moderación y Retirada de Contenidos",
+      "slug": "politica-de-moderacion",
+      "version": "",
+      "effective_date": "",
+      "content": "[PENDIENTE — NO ACTIVAR TODAVÍA: corresponde a la fase en la que existan publicaciones o comentarios de usuarios y un sistema de moderación.]"
+    },
+    {
+      "active": false,
+      "order": 10,
+      "title": "Contenido generado o manipulado mediante IA",
+      "slug": "contenido-ia",
+      "version": "",
+      "effective_date": "",
+      "content": "[PENDIENTE — activar solo si se publica contenido que quede sujeto a las obligaciones de transparencia del art. 50 del Reglamento Europeo de IA (por ejemplo, imágenes o vídeos manipulados presentados como reales, o texto generado por IA sobre asuntos de interés público sin supervisión editorial humana). El modelo de contenido del CMS ya registra el origen de cada imagen (fotografía propia, con licencia, generada mediante IA, etc.) para poder activar este aviso cuando corresponda.]"
+    }
+  ]
+}
