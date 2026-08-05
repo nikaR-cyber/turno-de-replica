@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Museo Literario · Turno de Réplica</title>
-<meta name="description" content="Curiosidades, historia y reliquias de nuestras historias favoritas.">
+<title>Ecos de Papel · Turno de Réplica</title>
+<meta name="description" content="Ecos de Papel, el club de lectura de Turno de Réplica. Únete en Discord, descubre la lectura actual y no te pierdas los próximos encuentros.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body data-filename="museo-literario-entrada.html">
+<body data-filename="ecos-de-papel.html">
 
 <div class="sparkle-field" aria-hidden="true"></div>
 
@@ -36,16 +36,57 @@
     <span class="nav-dot">·</span>
     <a href="club-de-la-trama-y-el-drama.html">El Club de la Trama y el Drama</a>
     <span class="nav-dot">·</span>
-    <a href="museo-literario.html" aria-current="page">Museo Literario</a>
+    <a href="museo-literario.html">Museo Literario</a>
     <span class="nav-dot">·</span>
     <a href="taller-de-escritura.html">Taller de Escritura</a>
+    <span class="nav-dot">·</span>
+    <a href="ecos-de-papel.html" aria-current="page">Ecos de Papel</a>
   </nav>
 </header>
 
-<main>
-  <div data-entry-detail data-content-source="content/museo-literario.json" data-list-page="museo-literario.html">
-    <p class="page-intro" style="text-align:center;">Cargando...</p>
-  </div>
+<main data-ecos-de-papel data-content-source="content/ecos-de-papel.json">
+
+  <a class="back-home" href="index.html">← Volver al Inicio</a>
+
+  <section class="page-hero">
+    <span class="badge badge-sage" data-editable="true">Club de Lectura</span>
+    <div class="hero-masks" aria-hidden="true">
+      <span class="mask mask-left">📖</span>
+      <span class="mask mask-right">🌿</span>
+    </div>
+    <h1 data-editable="true">Ecos de Papel</h1>
+    <div class="divider" aria-hidden="true">
+      <span class="divider-line"></span><span class="divider-heart">♥</span><span class="divider-line"></span>
+    </div>
+    <p class="page-intro" data-editable="true">
+      El club de lectura de Turno de Réplica. Leemos juntas, comentamos
+      juntas, y nos reunimos en Discord para hablar de todo lo que nos
+      hacen sentir los libros.
+    </p>
+  </section>
+
+  <section class="discord-cta">
+    <h2 data-editable="true">💬 Únete a la conversación</h2>
+    <div id="discord-cta-body">
+      <p>Cargando...</p>
+    </div>
+  </section>
+
+  <section class="readings-row">
+    <article class="reading-card" id="current-reading"></article>
+    <article class="reading-card" id="next-reading"></article>
+  </section>
+
+  <section class="previous-readings">
+    <h2 data-editable="true">Lecturas anteriores</h2>
+    <ul id="previous-readings-list"></ul>
+  </section>
+
+  <section class="corkboard-section">
+    <h2 data-editable="true">📌 Corcho de anuncios</h2>
+    <div class="corkboard" id="corkboard"></div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
@@ -77,7 +118,8 @@
 </svg>
 
 <script src="slug-utils.js"></script>
-<script src="entry-detail.js" defer></script>
+<script src="ecos-de-papel.js" defer></script>
+<script src="script.js" defer></script>
 <script src="legal-drawer.js" defer></script>
 <script src="nav-drawer.js" defer></script>
 </body>
