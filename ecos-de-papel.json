@@ -1,0 +1,15 @@
+{
+  "discord_url": "",
+  "current_reading": {
+    "title": "",
+    "author": "",
+    "cover": ""
+  },
+  "next_reading": {
+    "title": "",
+    "author": "",
+    "date": ""
+  },
+  "previous_readings": [],
+  "announcements": []
+}
