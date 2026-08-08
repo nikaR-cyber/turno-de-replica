@@ -1,0 +1,15 @@
+COMO SUBIR ESTOS ARCHIVOS A TU REPO (turno-de-replica)
+
+1. Ve a github.com/nikaR-cyber/turno-de-replica
+2. Boton "Add file" (arriba) -> "Upload files"
+3. Arrastra estos 3 archivos: package.json, .eleventy.js, .eleventyignore
+   (Ojo: los dos ultimos empiezan con un punto. Si tu ordenador los oculta,
+   asegurate de que al arrastrarlos a GitHub se vean con el punto delante.
+   GitHub los sube bien aunque tu explorador de archivos los esconda.)
+4. Abajo del todo, boton verde "Commit changes"
+
+Despues, en Netlify (esto no es un archivo, es un ajuste):
+Site configuration -> Build & deploy -> Build settings -> Edit settings
+  Build command: npx @11ty/eleventy
+  Publish directory: _site
+Guardar.
