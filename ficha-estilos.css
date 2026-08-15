@@ -18,12 +18,12 @@
 .fa-libro h5{font-size:12px;margin:0 0 2px;font-family:'Playfair Display',serif;}
 .fa-libro p{font-size:11px;color:var(--ink-mute);margin:0;}
 
-.fa-tintero{background:#F6E19B;border-radius:12px;padding:18px 20px;transform:rotate(-1deg);}
-.fa-tintero h4{margin:0 0 8px;font-size:14px;color:#5C4A1A;}
-.fa-tintero p{font-size:13px;color:#5C4A1A;margin:0 0 10px;}
-.fa-tintero .ec-progress-bar{background:#E3CE85;}
-.fa-tintero .ec-progress-fill{background:#8A6A1E;}
-.fa-tintero .td-meta{color:#5C4A1A;}
+.fa-tintero{background:var(--card-alt);border-radius:12px;padding:18px 20px;position:relative;}
+.fa-tintero h4{margin:0 0 8px;font-size:14px;}
+.fa-tintero p{font-size:13px;color:var(--ink-soft);margin:0 0 10px;}
+.fa-tintero .ec-progress-bar{background:var(--line);}
+.fa-tintero .ec-progress-fill{background:var(--accent);}
+.fa-tintero .td-meta{color:var(--ink-mute);}
 
 .fa-links{background:var(--card-pink-alt);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:12px;}
 .fa-links h4{margin:0 0 6px;font-size:14px;}
