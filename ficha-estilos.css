@@ -9,12 +9,13 @@
 .fa-block p{font-size:14px;color:var(--ink-soft);line-height:1.6;margin:0;}
 
 .fa-destacada{display:grid;grid-template-columns:130px 1fr;gap:20px;background:var(--card-alt);}
-.fa-book-cover{background:#2A2320;border-radius:6px;min-height:180px;}
+.fa-book-cover{background:#2A2320;border-radius:6px;position:relative;padding-top:150%;}
 .fa-destacada h3{font-size:19px;margin:6px 0 8px;}
 .fa-destacada p{margin-bottom:12px;}
 
 .fa-biblioteca-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
-.fa-mini-cover{height:110px;border-radius:6px;margin-bottom:6px;}
+.fa-mini-cover{position:relative;padding-top:150%;border-radius:6px;margin-bottom:6px;overflow:hidden;}
+.fa-mini-cover > *{position:absolute;inset:0;}
 .fa-libro h5{font-size:12px;margin:0 0 2px;font-family:'Playfair Display',serif;}
 .fa-libro p{font-size:11px;color:var(--ink-mute);margin:0;}
 
