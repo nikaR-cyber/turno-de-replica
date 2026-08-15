@@ -3,140 +3,154 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 <title>Turno de Réplica</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home-estilos.css">
 </head>
-<body data-filename="index.html">
+<body>
 
-<div class="sparkle-field" aria-hidden="true"></div>
-
-<header class="site-header">
-  <div class="corner corner-tl" aria-hidden="true"><svg viewBox="0 0 200 200"><use href="#flourish"/></svg></div>
-  <div class="corner corner-tr" aria-hidden="true"><svg viewBox="0 0 200 200"><use href="#flourish"/></svg></div>
-
-  <div class="logo-badge">
-    <svg viewBox="0 0 260 260" class="logo-ring" aria-hidden="true">
-      <circle cx="130" cy="130" r="120" fill="none" stroke="url(#ringGrad)" stroke-width="2.5"/>
-      <circle cx="130" cy="130" r="112" fill="none" stroke="url(#ringGrad)" stroke-width="1"/>
-    </svg>
-    <div class="logo-content">
-      <p class="logo-script" data-editable="true">Turno de</p>
-      <p class="logo-serif" data-editable="true"><em>Réplica</em></p>
-    </div>
+<header>
+  <div class="logo-block">
+    <h1>TURNO <em>de</em> RÉPLICA ✦</h1>
+    <p>Revista Literaria • Comunidad • Historias</p>
   </div>
-
-  <nav class="site-nav">
-    <a href="index.html" aria-current="page">Inicio</a>
-    <span class="nav-dot">·</span>
-    <a href="la-trama-y-el-drama.html">La Trama y el Drama</a>
-    <span class="nav-dot">·</span>
-    <a href="club-de-la-trama-y-el-drama.html">El Club de la Trama y el Drama</a>
-    <span class="nav-dot">·</span>
-    <a href="museo-literario.html">Museo Literario</a>
-    <span class="nav-dot">·</span>
-    <a href="taller-de-escritura.html">Taller de Escritura</a>
+  <nav>
+    <a href="#">Revista</a><a href="#">El Club</a><a href="#">Taller</a><a href="#">Museo</a>
+    <a href="#">Ecos</a><a href="#">Plaza</a><a href="#">Creadores</a><a href="#">El Corcho</a>
+    <a href="#">Libros</a><a href="#">Autores</a><a href="#">Más ▾</a>
   </nav>
+  <div class="icons">
+    <span>🔍</span><span>✉️</span><span>👤</span>
+    <button id="theme-toggle" aria-pressed="false" title="Cambiar a modo noche">🌙</button>
+  </div>
+  <details class="mobile-menu">
+    <summary>☰ Menú</summary>
+    <div class="mobile-menu-list">
+      <a href="#">Revista</a><a href="#">El Club</a><a href="#">Taller</a><a href="#">Museo</a>
+      <a href="#">Ecos</a><a href="#">Plaza</a><a href="#">Creadores</a><a href="#">El Corcho</a>
+      <a href="#">Libros</a><a href="#">Autores</a>
+    </div>
+  </details>
 </header>
 
-<main>
-
-  <section class="hero-card">
-    <span class="badge badge-rose" data-editable="true">Bienvenida</span>
-    <div class="hero-masks" aria-hidden="true">
-      <span class="mask mask-left">🎭</span>
-      <span class="mask mask-right">🎭</span>
+<section class="hero">
+  <div>
+    <h2 class="heading">Historias que<br>inspiran, comunidad<br>que permanece.</h2>
+    <p>Revista, charlas, talleres y comunidad para lectores, autores y amantes de la literatura.</p>
+    <div class="hero-buttons">
+      <button class="btn-primary">Explora la revista</button>
+      <button class="btn-outline">Únete a la comunidad</button>
     </div>
-    <h1 data-editable="true">Turno de Réplica</h1>
-    <div class="divider" aria-hidden="true">
-      <span class="divider-line"></span><span class="divider-heart">♥</span><span class="divider-line"></span>
-    </div>
-    <p class="hero-copy" data-editable="true">
-      Un rincón para leer con pasión, escribir con calma
-      y tener siempre la última palabra.
-    </p>
-  </section>
-
-  <section class="link-cards">
-
-    <a class="link-card" href="la-trama-y-el-drama.html">
-      <div class="feature-icon" aria-hidden="true">🎭</div>
-      <h3 data-editable="true">La Trama y el Drama</h3>
-      <p data-editable="true">Newsletters, debates y todo el salseo literario del club.</p>
-    </a>
-
-    <a class="link-card" href="club-de-la-trama-y-el-drama.html">
-      <div class="feature-icon" aria-hidden="true">🔥</div>
-      <h3 data-editable="true">El Club de la Trama y el Drama</h3>
-      <p data-editable="true">El rincón más personal y desenfadado: confesiones, opiniones y drama literario sin filtro.</p>
-    </a>
-
-    <a class="link-card" href="museo-literario.html">
-      <div class="feature-icon" aria-hidden="true">🔑</div>
-      <h3 data-editable="true">Museo Literario</h3>
-      <p data-editable="true">Curiosidades, historia y reliquias de nuestras historias favoritas.</p>
-    </a>
-
-    <a class="link-card" href="taller-de-escritura.html">
-      <div class="feature-icon" aria-hidden="true">🖋️</div>
-      <h3 data-editable="true">Taller de Escritura</h3>
-      <p data-editable="true">Pule tus textos, encuentra tu voz y huye del bloqueo del escritor.</p>
-    </a>
-
-    <a class="link-card" href="ecos-de-papel.html">
-      <div class="feature-icon" aria-hidden="true">📖</div>
-      <h3 data-editable="true">Ecos de Papel</h3>
-      <p data-editable="true">El club de lectura de Turno de Réplica. Únete a la conversación en Discord.</p>
-    </a>
-
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="corner corner-bl" aria-hidden="true"><svg viewBox="0 0 200 200"><use href="#flourish"/></svg></div>
-  <div class="corner corner-br" aria-hidden="true"><svg viewBox="0 0 200 200"><use href="#flourish"/></svg></div>
-
-  <div class="social-row">
-    <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></a>
-    <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8.5h2.5V5H14c-2.2 0-4 1.8-4 4v2H8v3.5h2V21h3.5v-6.5H16l.5-3.5h-3V9c0-.5.4-1 1-1z" fill="currentColor"/></svg></a>
-    <a href="#" class="social-icon" aria-label="Correo"><svg viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4.5 7 12 13l7.5-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </div>
 
-  <p class="footer-copy" data-editable="true">© 2026 Turno de Réplica. Todos los derechos reservados.</p>
+  <div class="mag-wrap">
+    <div class="mag">
+      <h3 class="heading">TURNO <em>de</em> RÉPLICA</h3>
+      <p class="sub">Revista Literaria · Nº 08 · Junio 2026</p>
+      <div class="badge">Nº 08</div>
+      <div class="item"><h4>Entrevista a Nika R.</h4><p>El arte de crear mundos que laten</p></div>
+      <div class="item"><h4>Drama, Caos y Café</h4><p>El club de mayo</p></div>
+      <div class="item"><h4>12 Libros que No Podrás Soltar</h4></div>
+      <div class="filters"><h2 class="heading">ESCRIBIR<br>SIN FILTROS</h2></div>
+      <div class="sticker">Nuevo<br>Número<br>Cada Mes</div>
+    </div>
+  </div>
+
+  <div class="taglist">
+    <span>✦ Literatura</span>
+    <span>✦ Comunidad</span>
+    <span>✦ Creadoras</span>
+    <span>✦ Historias reales</span>
+  </div>
+</section>
+
+<section class="cards">
+  <div class="card"><div class="icon-circle">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--icon)" stroke-width="1.4"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M6 14h.01M10 14h.01M14 14h.01M18 14h.01M8 17h8"/></svg>
+  </div><h3 class="heading">La trama y el drama</h3><p>El lugar perfecto para el salseo literario y los debates sin filtro.</p>→</div>
+  <div class="card"><div class="icon-circle">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--icon)" stroke-width="1.4"><path d="M12 20l8-8a2.8 2.8 0 0 0-4-4l-8 8v4h4z"/><path d="M15 5l4 4"/></svg>
+  </div><h3 class="heading">Taller de escritura</h3><p>Escribe, mejora y comparte tu proceso creativo.</p>→</div>
+  <div class="card"><div class="icon-circle">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--icon)" stroke-width="1.4"><path d="M3 21h18M4 21V10M20 21V10M2 10l10-6 10 6M6 10v7M10 10v7M14 10v7M18 10v7"/></svg>
+  </div><h3 class="heading">Museo literario</h3><p>Un homenaje a la historia y las grandes voces.</p>→</div>
+  <div class="card"><div class="icon-circle">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--icon)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 4c2 1 2.5 3 1.5 5"/><path d="M16 4c-2 1-2.5 3-1.5 5"/>
+      <circle cx="12" cy="9" r="2.2"/>
+      <path d="M9 20c-.6-2.4 0-4.5 1.2-6"/><path d="M15 20c.6-2.4 0-4.5-1.2-6"/>
+      <path d="M9.5 15.5c1.6-1.4 3.4-1.4 5 0"/>
+      <rect x="8.2" y="16.8" width="7.6" height="3.2" rx=".6"/>
+      <path d="M12 16.8v3.2"/>
+    </svg>
+  </div><h3 class="heading">Ecos de papel</h3><p>Club de lectura en Discord. Lecturas, encuentros y más.</p>→</div>
+  <div class="card"><div class="icon-circle">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--icon)" stroke-width="1.4"><path d="M4 5h11a3 3 0 0 1 3 3v7H8l-4 3V5z"/></svg>
+  </div><h3 class="heading">La plaza del marujeo</h3><p>La comunidad. Opiniones, debates y todo lo que nos mueve.</p>→</div>
+  <div class="card"><div class="icon-circle">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--icon)" stroke-width="1.4"><path d="M2 5c3-1.5 6-1.5 10 0v14c-4-1.5-7-1.5-10 0V5z"/><path d="M22 5c-3-1.5-6-1.5-10 0v14c4-1.5 7-1.5 10 0V5z"/></svg>
+  </div><h3 class="heading">Revista turno de réplica</h3><p>Artículos, entrevistas y contenido exclusivo cada mes.</p>→</div>
+</section>
+
+<section class="bottom">
+  <div class="col">
+    <h4>Lo Último <span>Ver Todo</span></h4>
+    <ul>
+      <li><span class="date">12 JUN</span><a href="#">Entrevista a Nika R.: El arte de crear mundos que laten</a></li>
+      <li><span class="date">11 JUN</span><a href="#">¿Hay que avisar de los "chiles" en los libros?</a></li>
+      <li><span class="date">10 JUN</span><a href="#">5 libros que te romperán el alma (y te encantarán)</a></li>
+      <li><span class="date">09 JUN</span><a href="#">Recomendación: El club de las últimas páginas</a></li>
+    </ul>
+  </div>
+  <div class="col">
+    <h4>Desde la plaza <span>Ver Todo</span></h4>
+    <ul>
+      <li>🙂 <a href="#">Lectura que me cambió</a> — hace 23 min · 💬 12</li>
+      <li>🙂 <a href="#">¿Qué libro leíste esta semana?</a> — hace 1 h · 💬 8</li>
+      <li>🙂 <a href="#">Recomienda tu novela favorita</a> — hace 3 h · 💬 23</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h4>Destacado</h4>
+    <div class="destacado">
+      <div class="book-cover">EL BOSQUE<br>DE LOS<br>RECUERDOS<span>✦</span></div>
+      <div>
+        <span class="eyebrow">El libro del mes</span>
+        <p class="heading book-title">El bosque de los recuerdos</p>
+        <p class="body-serif" style="font-size:13px;color:var(--ink-soft);margin:0 0 10px;">Una historia que te abraza y no te suelta.</p>
+        <a href="#" style="font-size:12px;font-weight:700;text-transform:uppercase;color:var(--accent);">Ver ficha →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter-wrap">
+  <div class="newsletter">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+      <h4 style="margin:0;text-transform:uppercase;font-size:13px;letter-spacing:.05em;">Newsletter</h4>
+      <span class="r-badge">R</span>
+    </div>
+    <p class="body-serif" style="font-size:14px;color:var(--ink-soft);margin:10px 0 20px;">Historias, recomendaciones y un poquito de magia.</p>
+    <form onsubmit="return false;" style="display:flex;gap:0;">
+      <input type="email" placeholder="Tu correo electrónico" style="flex:1;padding:12px 14px;border:1px solid var(--line);border-radius:4px 0 0 4px;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;">
+      <button class="btn-primary" style="border-radius:0 4px 4px 0;white-space:nowrap;">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="#">Sobre Turno de Réplica</a><a href="#">Colaboraciones</a><a href="#">Contacto</a>
+    <a href="#">Aviso Legal</a><a href="#">Privacidad</a><a href="#">Cookies</a>
+  </div>
+  <div class="footer-social">
+    <span>♛</span><span>TikTok</span><span>Discord</span><span>✉️</span><span>★</span>
+  </div>
+  <p class="footer-copy">© 2026 Turno de Réplica. Todos los derechos reservados.</p>
 </footer>
 
-<svg width="0" height="0" style="position:absolute">
-  <defs>
-    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#c9a24b"/><stop offset="50%" stop-color="#e3c785"/><stop offset="100%" stop-color="#c9a24b"/>
-    </linearGradient>
-    <symbol id="flourish" viewBox="0 0 200 200">
-      <path d="M10,190 C10,120 40,60 100,40 C140,26 170,40 185,15" fill="none" stroke="#c9a24b" stroke-width="1.4" opacity="0.55"/>
-      <path d="M10,190 C50,180 60,150 55,110" fill="none" stroke="#c9a24b" stroke-width="1" opacity="0.4"/>
-      <circle cx="185" cy="15" r="3" fill="#c9a24b" opacity="0.6"/>
-      <circle cx="100" cy="40" r="2" fill="#e78a9a" opacity="0.7"/>
-      <circle cx="55" cy="110" r="2.2" fill="#9db894" opacity="0.6"/>
-    </symbol>
-  </defs>
-</svg>
-
-<script src="script.js" defer></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", function (user) {
-      if (!user) {
-        window.netlifyIdentity.on("login", function () {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
-<script src="legal-drawer.js" defer></script>
-<script src="nav-drawer.js" defer></script>
+<script src="home-tema.js"></script>
 </body>
 </html>
