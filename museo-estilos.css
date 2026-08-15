@@ -1,0 +1,37 @@
+.ml-hero{max-width:1600px;margin:0 auto;padding:48px 32px 0;display:grid;grid-template-columns:1fr 1.1fr .7fr;gap:24px;align-items:center;}
+.ml-title{font-size:44px;line-height:1.05;margin:0 0 16px;}
+.ml-italic{color:var(--accent);font-style:italic;font-weight:400;}
+.ml-hero-text p{color:var(--ink-soft);font-size:15px;line-height:1.6;}
+.ml-hero-img{height:280px;border-radius:14px;background:linear-gradient(135deg,var(--card-alt),var(--card));}
+.ml-quote{background:var(--card-pink-alt);border-radius:12px;padding:22px;height:280px;display:flex;flex-direction:column;justify-content:center;}
+.ml-quote p{font-family:'Playfair Display',serif;font-style:italic;font-size:17px;line-height:1.4;margin:0 0 12px;}
+.ml-quote span{font-size:12px;color:var(--ink-mute);}
+
+.ml-featured{display:grid;grid-template-columns:1fr 1.3fr;gap:0;background:var(--card);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;}
+.ml-featured-img{background:var(--card-alt);min-height:180px;}
+.ml-featured-body{padding:22px 26px;}
+.ml-featured-body h3{font-size:22px;margin:6px 0 10px;}
+.ml-featured-body p{font-size:14px;color:var(--ink-soft);margin:0 0 8px;line-height:1.5;}
+
+.ml-recientes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+
+.ml-categorias{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-direction:column;gap:14px;}
+.ml-categorias li{display:flex;gap:10px;align-items:flex-start;font-size:13px;}
+.ml-categorias strong{display:block;font-size:13px;margin-bottom:2px;}
+.ml-categorias span{font-size:12px;color:var(--ink-soft);}
+
+.ml-trivia{max-width:1600px;margin:48px auto 0;padding:28px 32px;background:var(--card-pink-alt);display:flex;flex-wrap:wrap;align-items:center;gap:24px;}
+.ml-trivia-head h4{margin:0;font-size:18px;}
+.ml-trivia-items{display:flex;flex-wrap:wrap;gap:24px;flex:1;}
+.ml-trivia-item{display:flex;align-items:center;gap:10px;max-width:220px;}
+.ml-trivia-item span{font-size:20px;}
+.ml-trivia-item p{font-size:12px;color:var(--ink-soft);margin:0;line-height:1.4;}
+.ml-trivia-btn{white-space:nowrap;}
+
+@media (max-width:900px){
+  .ml-hero{grid-template-columns:1fr;}
+  .ml-hero-img{order:-1;}
+  .ml-featured{grid-template-columns:1fr;}
+  .ml-recientes{grid-template-columns:1fr;}
+  .ml-trivia{flex-direction:column;align-items:flex-start;}
+}

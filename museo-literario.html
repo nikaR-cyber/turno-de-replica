@@ -3,132 +3,149 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Museo Literario · Turno de Réplica</title>
+<meta name="color-scheme" content="light dark">
+<title>Museo Literario — Turno de Réplica</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home-estilos.css">
+<link rel="stylesheet" href="trama-drama-estilos.css">
+<link rel="stylesheet" href="taller-estilos.css">
+<link rel="stylesheet" href="museo-estilos.css">
 </head>
-<body data-filename="museo-literario.html">
+<body>
 
-<div class="sparkle-field" aria-hidden="true"></div>
-
-<header class="site-header">
-  <div class="corner corner-tl" aria-hidden="true"><svg viewBox="0 0 200 200"><use href="#flourish"/></svg></div>
-  <div class="corner corner-tr" aria-hidden="true"><svg viewBox="0 0 200 200"><use href="#flourish"/></svg></div>
-
-  <div class="logo-badge">
-    <svg viewBox="0 0 260 260" class="logo-ring" aria-hidden="true">
-      <circle cx="130" cy="130" r="120" fill="none" stroke="url(#ringGrad)" stroke-width="2.5"/>
-      <circle cx="130" cy="130" r="112" fill="none" stroke="url(#ringGrad)" stroke-width="1"/>
-    </svg>
-    <div class="logo-content">
-      <p class="logo-script" data-editable="true">Turno de</p>
-      <p class="logo-serif" data-editable="true"><em>Réplica</em></p>
-    </div>
+<header>
+  <div class="logo-block">
+    <h1>TURNO <em>de</em> RÉPLICA ✦</h1>
+    <p>Revista Literaria • Comunidad • Historias</p>
   </div>
-
-  <nav class="site-nav">
-    <a href="index.html">Inicio</a>
-    <span class="nav-dot">·</span>
-    <a href="la-trama-y-el-drama.html">La Trama y el Drama</a>
-    <span class="nav-dot">·</span>
-    <a href="club-de-la-trama-y-el-drama.html">El Club de la Trama y el Drama</a>
-    <span class="nav-dot">·</span>
-    <a href="museo-literario.html" aria-current="page">Museo Literario</a>
-    <span class="nav-dot">·</span>
-    <a href="taller-de-escritura.html">Taller de Escritura</a>
+  <nav>
+    <a href="index.html">Inicio</a><a href="la-trama-y-el-drama.html">Trama y Drama</a><a href="taller-de-escritura.html">Taller</a><a href="museo-literario.html" class="active">Museo</a>
+    <a href="ecos-de-papel.html">Club de Lectura</a><a href="#">Plaza</a><a href="#">Autores</a><a href="#">Creadores</a><a href="#">El Corcho</a>
   </nav>
+  <div class="icons">
+    <span>🔍</span><span>✉️</span><span>👤</span>
+    <button id="theme-toggle" aria-pressed="false" title="Cambiar a modo noche">🌙</button>
+  </div>
+  <details class="mobile-menu">
+    <summary>☰ Menú</summary>
+    <div class="mobile-menu-list">
+      <a href="index.html">Inicio</a><a href="la-trama-y-el-drama.html">Trama y Drama</a><a href="taller-de-escritura.html">Taller</a><a href="museo-literario.html">Museo</a>
+      <a href="ecos-de-papel.html">Club de Lectura</a><a href="#">Plaza</a><a href="#">Autores</a><a href="#">Creadores</a><a href="#">El Corcho</a>
+    </div>
+  </details>
 </header>
 
-<main>
+<section class="ml-hero">
+  <div class="ml-hero-text">
+    <h2 class="heading ml-title">MUSEO<br><span class="ml-italic">Literario</span></h2>
+    <p class="body-serif">Un paseo por la historia de la literatura, sus grandes voces, objetos que cuentan historias y curiosidades que nos conectan con el pasado para entender el presente.</p>
+  </div>
+  <div class="ml-hero-img"></div>
+  <div class="ml-quote">
+    <p>"Los libros son espejos: solo ves en ellos lo que ya llevas dentro."</p>
+    <span>— Carlos Ruiz Zafón</span>
+  </div>
+</section>
 
-  <a class="back-home" href="index.html">← Volver al Inicio</a>
+<section class="ml-layout">
+  <div class="ml-main">
 
-  <section class="page-hero">
-    <span class="badge badge-rose" data-editable="true">Museo Literario</span>
-    <div class="hero-masks" aria-hidden="true">
-      <span class="mask mask-left">🔑</span>
-      <span class="mask mask-right">📜</span>
+    <div class="tl-section-head"><span class="eyebrow">✦ Destacado del mes</span></div>
+    <a class="ml-featured" href="#">
+      <div class="ml-featured-img"></div>
+      <div class="ml-featured-body">
+        <span class="td-badge trama">Pieza del mes</span>
+        <h3 class="heading">La carta que cambió la historia</h3>
+        <p>Descubre la carta que Herman Melville envió a su editor y que marcó el destino de Moby Dick.</p>
+        <p class="td-meta">Hace 2 días · 7 min de lectura</p>
+        <span class="btn-primary" style="display:inline-block;margin-top:6px;">LEER MÁS →</span>
+      </div>
+    </a>
+
+    <div class="tl-section-head"><span class="eyebrow">✦ Lo último en el Museo</span><a href="#" class="ver-todo">VER TODO →</a></div>
+    <div class="ml-recientes">
+      <article class="tl-card"><div class="tl-card-img"></div>
+        <span class="td-badge trama">Redescubre un Clásico</span>
+        <h4>Orgullo y prejuicio, de Jane Austen</h4>
+        <p class="tl-desc">Una mirada fresca a la obra que siguen amando generaciones.</p>
+        <p class="td-meta">Ayer · 9 min de lectura</p>
+      </article>
+      <article class="tl-card"><div class="tl-card-img"></div>
+        <span class="td-badge trama">Dato curioso</span>
+        <h4>¿Sabías que C.S. Lewis escribió más de 30 libros?</h4>
+        <p class="tl-desc">Mucho más que Narnia: su legado va mucho más allá.</p>
+        <p class="td-meta">Hace 3 días · 6 min de lectura</p>
+      </article>
+      <article class="tl-card"><div class="tl-card-img"></div>
+        <span class="td-badge trama">Reliquia</span>
+        <h4>El reloj de bolsillo de Virginia Woolf</h4>
+        <p class="tl-desc">Un objeto íntimo que la acompañó en sus últimos años.</p>
+        <p class="td-meta">Hace 5 días · 8 min de lectura</p>
+      </article>
+      <article class="tl-card"><div class="tl-card-img"></div>
+        <span class="td-badge trama">Curiosidad histórica</span>
+        <h4>El castillo que inspiró Drácula</h4>
+        <p class="tl-desc">La historia real detrás del mito de Bram Stoker.</p>
+        <p class="td-meta">Hace 6 días · 7 min de lectura</p>
+      </article>
+      <article class="tl-card"><div class="tl-card-img"></div>
+        <span class="td-badge trama">Redescubre un Clásico</span>
+        <h4>Cien años de soledad, de Gabriel García Márquez</h4>
+        <p class="tl-desc">Magia, soledad y realismo en su obra maestra.</p>
+        <p class="td-meta">Hace 1 semana · 10 min de lectura</p>
+      </article>
     </div>
-    <h1 data-editable="true">Museo<br>Literario</h1>
-    <div class="divider" aria-hidden="true">
-      <span class="divider-line"></span><span class="divider-heart">♥</span><span class="divider-line"></span>
-    </div>
-    <p class="page-intro" data-editable="true">
-      Curiosidades, historia y reliquias
-      de nuestras historias favoritas.
-    </p>
-  </section>
-
-  <section class="content-grid" data-content-source="content/museo-literario.json" data-detail-page="museo-literario-entrada.html">
-
-    <article class="content-item">
-      <span class="eyebrow">Pieza del mes</span>
-      <h3>El objeto que inspiró la trama</h3>
-      <p>Aquí puedes contar la historia real o curiosidad detrás de un objeto, carta o lugar que inspiró alguna de tus novelas.</p>
-    </article>
-
-    <article class="content-item">
-      <span class="eyebrow">Dato curioso</span>
-      <h3>Lo que no sabías sobre este clásico</h3>
-      <p>Un espacio para anécdotas de archivo, historia literaria o curiosidades de época que enriquecen la lectura.</p>
-    </article>
-
-    <article class="content-item">
-      <span class="eyebrow">Reliquia</span>
-      <h3>Del archivo a la página</h3>
-      <p>Cuenta cómo un documento o hallazgo de investigación se transformó en un momento clave de tu historia.</p>
-    </article>
-
-    <article class="content-item">
-      <span class="eyebrow">Curiosidad histórica</span>
-      <h3>Detrás del telón de época</h3>
-      <p>Detalles de contexto histórico que dan vida al mundo de tus novelas, explicados para tus lectoras.</p>
-    </article>
-
-  </section>
-
-  <section class="cta-block">
-    <h2 data-editable="true">¿Tienes una curiosidad que compartir?</h2>
-    <p data-editable="true">Cuéntanos qué reliquia o dato te gustaría ver expuesto en el próximo museo.</p>
-    <a class="cta-button" href="mailto:hola@turnodereplica.com" data-editable="true">Escribir al club</a>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="corner corner-bl" aria-hidden="true"><svg viewBox="0 0 200 200"><use href="#flourish"/></svg></div>
-  <div class="corner corner-br" aria-hidden="true"><svg viewBox="0 0 200 200"><use href="#flourish"/></svg></div>
-
-  <div class="social-row">
-    <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></a>
-    <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8.5h2.5V5H14c-2.2 0-4 1.8-4 4v2H8v3.5h2V21h3.5v-6.5H16l.5-3.5h-3V9c0-.5.4-1 1-1z" fill="currentColor"/></svg></a>
-    <a href="#" class="social-icon" aria-label="Correo"><svg viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4.5 7 12 13l7.5-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </div>
 
-  <p class="footer-copy" data-editable="true">© 2026 Turno de Réplica. Todos los derechos reservados.</p>
+  <aside class="tl-sidebar">
+    <div class="tl-side-card">
+      <h4 class="heading">✦ Explora el Museo</h4>
+      <ul class="ml-categorias">
+        <li>📌<div><strong>Pieza del mes</strong><span>El tesoro destacado de nuestro museo</span></div></li>
+        <li>📖<div><strong>Redescubre un Clásico</strong><span>Reseñas de clásicos que nunca pasan de moda</span></div></li>
+        <li>✨<div><strong>Dato curioso</strong><span>Pequeñas historias que te van a sorprender</span></div></li>
+        <li>🗝️<div><strong>Reliquia</strong><span>Objetos y documentos con historia</span></div></li>
+        <li>🕰️<div><strong>Curiosidad histórica</strong><span>Contextos, anécdotas y momentos clave</span></div></li>
+      </ul>
+      <a href="#" class="btn-primary" style="display:block;text-align:center;">VER TODAS LAS CATEGORÍAS →</a>
+    </div>
+
+    <div class="tl-side-card">
+      <h4 class="heading">No te pierdas nada</h4>
+      <p class="body-serif" style="font-size:13px;color:var(--ink-soft);margin:0 0 14px;">Recibe cada mes historias, curiosidades y tesoros literarios en tu correo.</p>
+      <form onsubmit="return false;" style="display:flex;flex-direction:column;gap:10px;">
+        <input type="email" placeholder="Tu correo aquí..." class="tl-search" style="margin-bottom:0;">
+        <button class="btn-primary">Suscribirme</button>
+      </form>
+    </div>
+  </aside>
+</section>
+
+<section class="ml-trivia">
+  <div class="ml-trivia-head">
+    <h4 class="heading">¿Sabías que...?</h4>
+  </div>
+  <div class="ml-trivia-items">
+    <div class="ml-trivia-item"><span>🪶</span><p>Shakespeare inventó más de 1.700 palabras en inglés.</p></div>
+    <div class="ml-trivia-item"><span>👤</span><p>Jane Austen nunca publicó bajo su propio nombre.</p></div>
+    <div class="ml-trivia-item"><span>🌬️</span><p>El Quijote fue el primer best seller de la historia.</p></div>
+    <div class="ml-trivia-item"><span>📗</span><p>Mary Shelley escribió Frankenstein con 18 años.</p></div>
+  </div>
+  <a href="#" class="btn-primary ml-trivia-btn">VER MÁS CURIOSIDADES →</a>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="#">Sobre Turno de Réplica</a><a href="#">Colaboraciones</a><a href="#">Contacto</a>
+    <a href="#">Aviso Legal</a><a href="#">Privacidad</a><a href="#">Cookies</a>
+  </div>
+  <div class="footer-social">
+    <span>♛</span><span>TikTok</span><span>Discord</span><span>✉️</span><span>★</span>
+  </div>
+  <p class="footer-copy">© 2026 Turno de Réplica. Todos los derechos reservados.</p>
 </footer>
 
-<svg width="0" height="0" style="position:absolute">
-  <defs>
-    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#c9a24b"/><stop offset="50%" stop-color="#e3c785"/><stop offset="100%" stop-color="#c9a24b"/>
-    </linearGradient>
-    <symbol id="flourish" viewBox="0 0 200 200">
-      <path d="M10,190 C10,120 40,60 100,40 C140,26 170,40 185,15" fill="none" stroke="#c9a24b" stroke-width="1.4" opacity="0.55"/>
-      <path d="M10,190 C50,180 60,150 55,110" fill="none" stroke="#c9a24b" stroke-width="1" opacity="0.4"/>
-      <circle cx="185" cy="15" r="3" fill="#c9a24b" opacity="0.6"/>
-      <circle cx="100" cy="40" r="2" fill="#e78a9a" opacity="0.7"/>
-      <circle cx="55" cy="110" r="2.2" fill="#9db894" opacity="0.6"/>
-    </symbol>
-  </defs>
-</svg>
-
-<script src="slug-utils.js"></script>
-<script src="content-loader.js" defer></script>
-<script src="script.js" defer></script>
-<script src="legal-drawer.js" defer></script>
-<script src="nav-drawer.js" defer></script>
+<script src="home-tema.js"></script>
 </body>
 </html>
