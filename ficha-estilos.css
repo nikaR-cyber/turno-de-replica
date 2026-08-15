@@ -1,0 +1,37 @@
+.fa-hero{max-width:1600px;margin:0 auto;padding:36px 32px 0;display:flex;gap:24px;align-items:center;}
+.fa-avatar{width:110px;height:110px;border-radius:50%;background:linear-gradient(135deg,var(--card-purple),var(--card-pink-alt));flex-shrink:0;}
+.fa-hero-text h2{font-size:30px;margin:0 0 4px;}
+.fa-lema{font-family:'Playfair Display',serif;font-style:italic;color:var(--accent);font-size:16px;margin:0 0 6px;}
+
+.fa-layout{max-width:1600px;margin:32px auto 0;padding:0 32px;display:grid;grid-template-columns:2.3fr 1fr;gap:32px;align-items:start;}
+.fa-block{background:var(--card);border-radius:14px;padding:22px;margin-bottom:20px;}
+.fa-block h4{font-size:15px;margin:0 0 12px;}
+.fa-block p{font-size:14px;color:var(--ink-soft);line-height:1.6;margin:0;}
+
+.fa-destacada{display:grid;grid-template-columns:130px 1fr;gap:20px;background:var(--card-alt);}
+.fa-book-cover{background:#2A2320;border-radius:6px;min-height:180px;}
+.fa-destacada h3{font-size:19px;margin:6px 0 8px;}
+.fa-destacada p{margin-bottom:12px;}
+
+.fa-biblioteca-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.fa-mini-cover{height:110px;border-radius:6px;margin-bottom:6px;}
+.fa-libro h5{font-size:12px;margin:0 0 2px;font-family:'Playfair Display',serif;}
+.fa-libro p{font-size:11px;color:var(--ink-mute);margin:0;}
+
+.fa-tintero{background:#F6E19B;border-radius:12px;padding:18px 20px;transform:rotate(-1deg);}
+.fa-tintero h4{margin:0 0 8px;font-size:14px;color:#5C4A1A;}
+.fa-tintero p{font-size:13px;color:#5C4A1A;margin:0 0 10px;}
+.fa-tintero .ec-progress-bar{background:#E3CE85;}
+.fa-tintero .ec-progress-fill{background:#8A6A1E;}
+.fa-tintero .td-meta{color:#5C4A1A;}
+
+.fa-links{background:var(--card-pink-alt);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:12px;}
+.fa-links h4{margin:0 0 6px;font-size:14px;}
+.fa-links a{background:var(--bg);border-radius:8px;padding:10px 14px;font-size:13px;text-decoration:none;color:var(--ink);border:1px solid var(--line);}
+
+@media (max-width:900px){
+  .fa-hero{flex-direction:column;text-align:center;}
+  .fa-layout{grid-template-columns:1fr;}
+  .fa-destacada{grid-template-columns:1fr;}
+  .fa-biblioteca-grid{grid-template-columns:repeat(2,1fr);}
+}
