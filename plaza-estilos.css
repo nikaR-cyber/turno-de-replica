@@ -1,0 +1,62 @@
+.pz-disclaimer{max-width:1600px;margin:14px auto 0;padding:10px 32px;font-size:12px;background:#FCEFC7;color:#6B5730;text-align:center;}
+
+.pz-hero{max-width:1600px;margin:0 auto;padding:32px 32px 0;text-align:center;position:relative;}
+.pz-hero-note{display:inline-block;background:var(--card-purple);border-radius:10px;padding:12px 20px;font-size:13px;transform:rotate(-2deg);margin-bottom:20px;}
+.pz-title{font-size:38px;letter-spacing:.02em;margin:0 0 10px;}
+.pz-tagline{font-size:15px;color:var(--ink-soft);max-width:480px;margin:0 auto;}
+
+.pz-layout{max-width:1600px;margin:32px auto 0;padding:0 32px;display:grid;grid-template-columns:1fr 2fr 1fr;gap:24px;align-items:start;}
+.pz-sidebar-left,.pz-sidebar-right{display:flex;flex-direction:column;gap:18px;}
+.pz-new-post{width:100%;}
+.pz-nav-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:13px;}
+.pz-nav-list li.active{color:var(--accent);font-weight:600;}
+.pz-check{display:flex;align-items:center;gap:8px;font-size:13px;margin-bottom:10px;}
+.pz-note-card{background:var(--card-pink-alt);border-radius:12px;padding:16px;transform:rotate(1deg);}
+.pz-note-card strong{font-size:13px;display:block;margin-bottom:6px;}
+.pz-note-card p{font-size:12px;color:var(--ink-soft);margin:0;line-height:1.4;}
+
+.pz-rules{background:var(--card-purple);border-radius:12px;padding:18px 20px;margin-bottom:20px;}
+.pz-rules h4{margin:0 0 10px;font-size:14px;}
+.pz-rules ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 20px;font-size:12px;}
+
+.pz-tabs{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;}
+.pz-tab{background:var(--card);border:none;border-radius:20px;padding:8px 18px;font-size:12px;font-weight:600;cursor:pointer;text-transform:uppercase;letter-spacing:.03em;}
+.pz-tab.active{background:var(--accent);color:#fff;}
+
+.pz-post{background:var(--card);border-radius:14px;padding:20px;margin-bottom:18px;}
+.pz-post-head{display:flex;gap:10px;align-items:center;margin-bottom:10px;}
+.pz-avatar{width:34px;height:34px;border-radius:50%;background:var(--card-alt);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.pz-post-head strong{font-size:13px;display:block;}
+.pz-post-head span{font-size:11px;color:var(--ink-mute);}
+.pz-type{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.03em;padding:4px 10px;border-radius:20px;margin-bottom:10px;}
+.pz-type.debate{background:#F6C9CE;color:#7A2B36;}
+.pz-type.recomendacion{background:#F6E19B;color:#6B5220;}
+.pz-type.microrrelato{background:#C7DAC7;color:#33523A;}
+.pz-type.confesion{background:#DCC7E8;color:#4A2B5C;}
+.pz-type.pregunta{background:#BFD8EA;color:#1F4A63;}
+.pz-post h3{font-family:'Playfair Display',serif;font-size:18px;margin:0 0 8px;}
+.pz-post p{font-size:13px;color:var(--ink-soft);margin:0 0 12px;line-height:1.5;}
+.pz-post-stats{display:flex;gap:16px;font-size:12px;color:var(--ink-mute);}
+
+.pz-highlight{margin-bottom:16px;}
+.pz-highlight strong{display:block;font-size:12px;color:var(--accent);margin-bottom:4px;}
+.pz-highlight p{font-size:13px;margin:0 0 2px;font-family:'Playfair Display',serif;}
+.pz-highlight span{font-size:11px;color:var(--ink-mute);}
+
+.pz-creador{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.pz-creador strong{font-size:13px;display:block;}
+.pz-creador span{font-size:11px;color:var(--ink-soft);}
+
+.pz-corcho{background:var(--card-pink-alt);border-radius:14px;padding:20px;text-align:center;}
+.pz-corcho h4{margin:0 0 8px;font-size:15px;}
+.pz-corcho p{font-size:12px;color:var(--ink-soft);margin:0 0 14px;}
+
+.pz-cta-final{max-width:1600px;margin:36px auto 0;padding:26px 32px;background:#241521;color:#F1ECE3;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+.pz-cta-final p{font-size:14px;margin:0;max-width:420px;}
+.pz-cta-badge{background:#E8B8C4;color:#241521;font-weight:700;font-size:13px;padding:8px 18px;border-radius:20px;}
+
+@media (max-width:900px){
+  .pz-layout{grid-template-columns:1fr;}
+  .pz-rules ul{flex-direction:column;}
+  .pz-cta-final{flex-direction:column;align-items:flex-start;text-align:left;}
+}
