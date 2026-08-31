@@ -1,7 +1,7 @@
 .ec-hero{max-width:1600px;margin:0 auto;padding:48px 32px 0;display:grid;grid-template-columns:1fr 1.4fr;gap:32px;align-items:center;}
 .ec-hero-img{height:260px;border-radius:14px;background:linear-gradient(135deg,var(--card-pink-alt),var(--card-purple));}
 .ec-title{font-size:44px;line-height:1.05;margin:0 0 10px;}
-.ec-tagline{font-family:'Cormorant',serif;font-style:italic;color:var(--accent);font-size:18px;line-height:1.4;margin:0 0 14px;}
+.ec-tagline{font-family:'Cormorant',serif;font-style:italic;color:var(--ecos-text);font-size:18px;line-height:1.4;margin:0 0 14px;}
 .ec-hero-text p.body-serif{color:var(--ink-soft);font-size:15px;max-width:420px;}
 
 .ec-layout{max-width:1600px;margin:36px auto 0;padding:0 32px;display:grid;grid-template-columns:2fr 1fr;gap:24px;align-items:start;}

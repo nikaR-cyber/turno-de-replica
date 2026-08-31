@@ -2,7 +2,7 @@
 
 .pz-hero{max-width:1600px;margin:0 auto;padding:32px 32px 0;text-align:center;position:relative;}
 .pz-hero-note{display:inline-block;background:var(--card-purple);border-radius:10px;padding:12px 20px;font-size:13px;transform:rotate(-2deg);margin-bottom:20px;}
-.pz-title{font-size:38px;letter-spacing:.02em;margin:0 0 10px;}
+.pz-title{font-size:38px;letter-spacing:.02em;margin:0 0 10px;border-bottom:4px solid var(--interaction);display:inline-block;padding-bottom:6px;}
 .pz-tagline{font-size:15px;color:var(--ink-soft);max-width:480px;margin:0 auto;}
 
 .pz-layout{max-width:1600px;margin:32px auto 0;padding:0 32px;display:grid;grid-template-columns:1fr 2fr 1fr;gap:24px;align-items:start;}

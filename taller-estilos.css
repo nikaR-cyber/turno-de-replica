@@ -1,6 +1,6 @@
 .tl-hero{max-width:1600px;margin:0 auto;padding:48px 32px 0;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;}
 .tl-title{font-size:44px;line-height:1.05;margin:0 0 16px;}
-.tl-italic{color:var(--accent);font-style:italic;font-weight:400;}
+.tl-italic{color:var(--taller-text);font-style:italic;font-weight:400;}
 .tl-hero-text p{max-width:440px;color:var(--ink-soft);font-size:16px;line-height:1.6;}
 .tl-hero-img{height:260px;border-radius:14px;background:linear-gradient(135deg,var(--card-alt),var(--card));}
 

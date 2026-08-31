@@ -1,6 +1,6 @@
 .ml-hero{max-width:1600px;margin:0 auto;padding:48px 32px 0;display:grid;grid-template-columns:1fr 1.1fr .7fr;gap:24px;align-items:center;}
 .ml-title{font-size:44px;line-height:1.05;margin:0 0 16px;}
-.ml-italic{color:var(--accent);font-style:italic;font-weight:400;}
+.ml-italic{color:var(--secondary);font-style:italic;font-weight:400;}
 .ml-hero-text p{color:var(--ink-soft);font-size:15px;line-height:1.6;}
 .ml-hero-img{height:280px;border-radius:14px;background:linear-gradient(135deg,var(--card-alt),var(--card));}
 .ml-quote{background:var(--card-pink-alt);border-radius:12px;padding:22px;height:280px;display:flex;flex-direction:column;justify-content:center;}
