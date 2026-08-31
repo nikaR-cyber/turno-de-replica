@@ -28,7 +28,25 @@
   nav{display:flex;gap:24px;font-size:14px;color:var(--ink-mute);flex-wrap:wrap;}
   nav a:hover{color:var(--accent);}
   .icons{display:flex;gap:20px;color:var(--ink-mute);}
-  .hero{max-width:1600px;margin:0 auto;padding:64px 32px;display:grid;grid-template-columns:5fr 5fr 2fr;gap:32px;align-items:center;}
+  .hero{max-width:1600px;margin:0 auto;padding:64px 32px;display:grid;grid-template-columns:5fr 5fr 2fr;gap:32px;align-items:center;position:relative;}
+
+  .deco-star{position:absolute;width:22px;height:22px;pointer-events:none;z-index:2;}
+  .star-1{top:8%;left:38%;transform:rotate(-12deg);}
+  .star-2{top:60%;left:2%;transform:rotate(20deg);}
+  .star-3{top:12%;right:26%;width:16px;height:16px;transform:rotate(8deg);}
+
+  .deco-word{position:relative;display:inline-block;}
+  .deco-underline{position:absolute;left:0;bottom:-10px;width:100%;height:14px;pointer-events:none;}
+
+  .deco-p-wrap{position:relative;}
+  .deco-arrow{position:absolute;width:44px;height:38px;right:20px;bottom:-40px;pointer-events:none;}
+
+  .washi-tape{position:absolute;width:70px;height:26px;background:var(--highlight);opacity:.75;z-index:3;}
+  .tape-1{top:-10px;left:20px;transform:rotate(-8deg);}
+  .tape-2{bottom:-10px;right:30px;transform:rotate(6deg);background:var(--interaction);}
+  @media (max-width:900px){
+    .deco-star,.deco-arrow{display:none;}
+  }
   .hero h2{font-size:52px;line-height:1.1;margin:0 0 24px;}
   .hero p{font-family:'Inter',serif;font-size:18px;color:var(--ink-soft);max-width:420px;line-height:1.6;margin-bottom:36px;}
   .hero-buttons{display:flex;gap:16px;flex-wrap:wrap;}
