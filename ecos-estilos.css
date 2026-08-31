@@ -1,7 +1,7 @@
 .ec-hero{max-width:1600px;margin:0 auto;padding:48px 32px 0;display:grid;grid-template-columns:1fr 1.4fr;gap:32px;align-items:center;}
 .ec-hero-img{height:260px;border-radius:14px;background:linear-gradient(135deg,var(--card-pink-alt),var(--card-purple));}
 .ec-title{font-size:44px;line-height:1.05;margin:0 0 10px;}
-.ec-tagline{font-family:'Playfair Display',serif;font-style:italic;color:var(--accent);font-size:18px;line-height:1.4;margin:0 0 14px;}
+.ec-tagline{font-family:'Cormorant',serif;font-style:italic;color:var(--accent);font-size:18px;line-height:1.4;margin:0 0 14px;}
 .ec-hero-text p.body-serif{color:var(--ink-soft);font-size:15px;max-width:420px;}
 
 .ec-layout{max-width:1600px;margin:36px auto 0;padding:0 32px;display:grid;grid-template-columns:2fr 1fr;gap:24px;align-items:start;}
@@ -45,10 +45,10 @@
 .ec-normas-list li:before{content:"♡ ";color:var(--accent);}
 
 .ec-cta-banner{max-width:1600px;margin:36px auto 0;padding:36px 32px;background:#241521;color:#F1ECE3;border-radius:0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
-.ec-cta-line{font-family:'Playfair Display',serif;font-size:24px;line-height:1.25;margin:0 0 18px;color:#E8B8C4;}
+.ec-cta-line{font-family:'Cormorant',serif;font-size:24px;line-height:1.25;margin:0 0 18px;color:#E8B8C4;}
 .ec-cta-btn{display:inline-block;}
 .ec-cta-stats{font-size:12px;color:#C9BEB0;margin:14px 0 0;}
-.ec-cta-note{font-family:'Lora',serif;font-style:italic;font-size:13px;color:#C9BEB0;max-width:220px;}
+.ec-cta-note{font-family:'Inter',serif;font-style:italic;font-size:13px;color:#C9BEB0;max-width:220px;}
 
 .ec-spoiler-zone{max-width:1600px;margin:0 auto;padding:36px 32px;text-align:center;background:var(--card-pink-alt);}
 .ec-spoiler-zone h4{font-size:22px;margin:0 0 8px;}
@@ -64,7 +64,7 @@
 .ec-biblio-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;}
 .ec-mini-cover{height:130px;border-radius:8px;margin-bottom:8px;}
 .ec-mes{font-size:10px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.03em;}
-.ec-biblio-item h4{font-size:13px;margin:4px 0 2px;font-family:'Playfair Display',serif;}
+.ec-biblio-item h4{font-size:13px;margin:4px 0 2px;font-family:'Cormorant',serif;}
 .ec-biblio-item p{font-size:11px;color:var(--ink-soft);margin:0 0 6px;}
 
 @media (max-width:900px){

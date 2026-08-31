@@ -1,4 +1,5 @@
 .ck-banner{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;background:var(--card);border-radius:14px;padding:18px 20px;box-shadow:0 10px 30px rgba(0,0,0,.15);display:flex;gap:16px;align-items:center;flex-wrap:wrap;max-width:900px;margin:0 auto;}
+body.ck-banner-visible{padding-bottom:180px;}
 .ck-banner-text{flex:1;min-width:220px;}
 .ck-banner-text strong{font-size:14px;display:block;margin-bottom:4px;}
 .ck-banner-text p{font-size:12px;color:var(--ink-soft);margin:0;line-height:1.5;}
@@ -12,7 +13,7 @@
 .ck-overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);display:none;align-items:center;justify-content:center;z-index:10000;padding:20px;}
 .ck-overlay.ck-open{display:flex;}
 .ck-panel{background:var(--bg);border-radius:14px;padding:26px;max-width:480px;width:100%;max-height:85vh;overflow-y:auto;}
-.ck-panel h3{margin:0 0 18px;font-size:18px;font-family:'Playfair Display',serif;}
+.ck-panel h3{margin:0 0 18px;font-size:18px;font-family:'Cormorant',serif;}
 .ck-row{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--line);}
 .ck-row strong{font-size:13px;display:block;margin-bottom:4px;}
 .ck-row p{font-size:12px;color:var(--ink-soft);margin:0;line-height:1.4;}

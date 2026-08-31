@@ -34,13 +34,13 @@
 .pz-type.microrrelato{background:#C7DAC7;color:#33523A;}
 .pz-type.confesion{background:#DCC7E8;color:#4A2B5C;}
 .pz-type.pregunta{background:#BFD8EA;color:#1F4A63;}
-.pz-post h3{font-family:'Playfair Display',serif;font-size:18px;margin:0 0 8px;}
+.pz-post h3{font-family:'Cormorant',serif;font-size:18px;margin:0 0 8px;}
 .pz-post p{font-size:13px;color:var(--ink-soft);margin:0 0 12px;line-height:1.5;}
 .pz-post-stats{display:flex;gap:16px;font-size:12px;color:var(--ink-mute);}
 
 .pz-highlight{margin-bottom:16px;}
 .pz-highlight strong{display:block;font-size:12px;color:var(--accent);margin-bottom:4px;}
-.pz-highlight p{font-size:13px;margin:0 0 2px;font-family:'Playfair Display',serif;}
+.pz-highlight p{font-size:13px;margin:0 0 2px;font-family:'Cormorant',serif;}
 .pz-highlight span{font-size:11px;color:var(--ink-mute);}
 
 .pz-creador{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
