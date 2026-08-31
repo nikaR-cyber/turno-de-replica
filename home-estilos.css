@@ -21,6 +21,8 @@
   .logo-block h1{font-size:24px;font-weight:700;letter-spacing:-0.02em;margin:0;display:flex;align-items:center;gap:6px;}
   .logo-block h1 em{font-style:italic;font-weight:400;}
   .logo-block p{font-size:10px;letter-spacing:0.2em;color:var(--accent);text-transform:uppercase;font-weight:600;margin:4px 0 0;}
+  .site-logo{height:44px;width:auto;display:block;margin-bottom:4px;}
+  @media (max-width:900px){ .site-logo{height:36px;} }
   nav{display:flex;gap:24px;font-size:14px;color:var(--ink-mute);flex-wrap:wrap;}
   nav a:hover{color:var(--accent);}
   .icons{display:flex;gap:20px;color:var(--ink-mute);}

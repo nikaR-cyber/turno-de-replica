@@ -12,16 +12,19 @@
     });
 
     function apply(theme) {
+      var logo = document.getElementById('site-logo');
       if (theme === 'dark') {
         root.setAttribute('data-theme', 'dark');
         btn.textContent = '☀️';
         btn.title = 'Cambiar a modo día';
         btn.setAttribute('aria-pressed', 'true');
+        if (logo) logo.src = 'logo-noche.png';
       } else {
         root.removeAttribute('data-theme');
         btn.textContent = '🌙';
         btn.title = 'Cambiar a modo noche';
         btn.setAttribute('aria-pressed', 'false');
+        if (logo) logo.src = 'logo-dia.png';
       }
     }
   })();
