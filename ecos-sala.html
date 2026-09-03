@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>Sala de Ecos de Papel — Turno de Réplica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home-estilos.css">
+<link rel="stylesheet" href="cookies-estilos.css">
+<link rel="stylesheet" href="trama-drama-estilos.css">
+<link rel="stylesheet" href="taller-estilos.css">
+<link rel="stylesheet" href="ecos-estilos.css">
+<style>
+  .sala-wrap{max-width:760px;margin:48px auto;padding:0 32px;}
+  .sala-box{background:var(--card-purple-alt,var(--card));border-radius:14px;padding:32px;}
+  .sala-box h2{margin:0 0 6px;}
+  .sala-box .sub{color:var(--ink-soft);font-size:14px;margin:0 0 24px;}
+  .sala-normas{list-style:none;margin:0 0 24px;padding:0;display:flex;flex-direction:column;gap:12px;}
+  .sala-normas li{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--ink);}
+  .sala-normas li span{flex-shrink:0;}
+  .sala-check{display:flex;align-items:flex-start;gap:10px;font-size:14px;margin-bottom:22px;cursor:pointer;}
+  .sala-check input{margin-top:3px;}
+  #join-btn{width:100%;opacity:.5;cursor:not-allowed;border:none;}
+  #join-btn.activo{opacity:1;cursor:pointer;}
+  #room-container{width:100%;height:600px;display:none;border-radius:14px;overflow:hidden;margin:24px 0;}
+  .sala-nota{font-size:12px;color:var(--ink-mute);text-align:center;margin-top:16px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="logo-block">
+    <img src="logo-dia.png" alt="Turno de Réplica" class="site-logo" id="site-logo">
+    <p>Revista Literaria • Comunidad • Historias</p>
+  </div>
+    <div class="icons">
+    <span>🔍</span><span>✉️</span><span>👤</span>
+    <button id="theme-toggle" aria-pressed="false" title="Cambiar a modo noche">🌙</button>
+  </div>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a><a href="la-trama-y-el-drama.html">Trama y Drama</a><a href="taller-de-escritura.html">Taller</a><a href="museo-literario.html">Museo</a>
+    <a href="ecos-de-papel.html" class="active">Club de Lectura</a><a href="la-plaza-del-marujeo.html">Plaza</a><a href="ficha-de-autor.html">Autores</a><a href="ficha-de-creador.html">Creadores</a><a href="el-corcho.html">El Corcho</a>
+  </nav>
+  <details class="mobile-menu">
+    <summary>☰ Menú</summary>
+    <div class="mobile-menu-list">
+      <a href="index.html">Inicio</a><a href="la-trama-y-el-drama.html">Trama y Drama</a><a href="taller-de-escritura.html">Taller</a><a href="museo-literario.html">Museo</a>
+      <a href="ecos-de-papel.html">Club de Lectura</a><a href="la-plaza-del-marujeo.html">Plaza</a><a href="ficha-de-autor.html">Autores</a><a href="ficha-de-creador.html">Creadores</a><a href="el-corcho.html">El Corcho</a>
+    </div>
+  </details>
+</header>
+
+<section class="sala-wrap">
+
+  <div id="rules-box" class="sala-box">
+    <span class="eyebrow">🎙️ Ecos de Papel</span>
+    <h2 class="heading">Sala de voz</h2>
+    <p class="sub">Antes de entrar, lee y acepta las normas de convivencia.</p>
+
+    <ul class="sala-normas">
+      <li><span>🩶</span> Este es un espacio seguro y amable.</li>
+      <li><span>🎧</span> Silencia el micrófono cuando no estés hablando.</li>
+      <li><span>⚠️</span> Avisa siempre antes de soltar un spoiler.</li>
+      <li><span>🚫</span> No se permite contenido ofensivo, ni faltas de respeto.</li>
+      <li><span>☕</span> Lo importante: disfrutar del drama y del café, juntas.</li>
+    </ul>
+
+    <label class="sala-check">
+      <input type="checkbox" id="accept-rules" onchange="toggleButton()">
+      He leído y acepto las normas de la sala
+    </label>
+
+    <button id="join-btn" class="btn-primary" disabled onclick="startConference()">Entrar a la sala →</button>
+    <p class="sala-nota">La sala funciona con Jitsi Meet: no necesitas registrarte ni descargar nada. Si es la primera persona en entrar, se convertirá en moderadora de la sesión.</p>
+  </div>
+
+  <div id="room-container"></div>
+
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="sobre-turno-de-replica.html">Sobre Turno de Réplica</a><a href="#">Colaboraciones</a><a href="#">Contacto</a>
+    <a href="aviso-legal.html">Aviso Legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a>
+    <a href="#" id="footer-cookie-settings">Configurar cookies</a>
+  </div>
+  <div class="footer-social">
+    <span>♛</span><span>TikTok</span><span>Discord</span><span>✉️</span><span>★</span>
+  </div>
+  <p class="footer-copy">© 2026 Turno de Réplica. Todos los derechos reservados.</p>
+</footer>
+
+<script src="home-tema.js"></script>
+<script src="cookie-consent.js"></script>
+<script src="https://meet.jit.si/external_api.js"></script>
+<script>
+  function toggleButton() {
+    const checkbox = document.getElementById('accept-rules');
+    const btn = document.getElementById('join-btn');
+    btn.disabled = !checkbox.checked;
+    btn.classList.toggle('activo', checkbox.checked);
+  }
+
+  function startConference() {
+    document.getElementById('rules-box').style.display = 'none';
+    document.getElementById('room-container').style.display = 'block';
+
+    const domain = 'meet.jit.si';
+    const options = {
+      roomName: 'TurnoDeReplica-EcosDePapel',
+      width: '100%',
+      height: '100%',
+      parentNode: document.querySelector('#room-container'),
+      configOverwrite: {
+        prejoinPageEnabled: true
+      }
+    };
+    new JitsiMeetExternalAPI(domain, options);
+  }
+</script>
+</body>
+</html>
