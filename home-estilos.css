@@ -21,7 +21,7 @@
   .body-serif{font-family:'Inter',serif;}
   header{padding:18px 32px;border-bottom:1px solid var(--line);}
   .header-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
-  nav{display:flex;gap:24px;font-size:14px;color:var(--ink-mute);flex-wrap:wrap;padding-top:12px;border-top:1px solid var(--line);}
+  nav{display:flex;gap:24px;font-size:14px;color:var(--ink-mute);flex-wrap:wrap;padding-top:12px;border-top:1px solid var(--line);justify-content:center;width:100%;}
   .logo-block h1{font-size:24px;font-weight:700;letter-spacing:-0.02em;margin:0;display:flex;align-items:center;gap:6px;}
   .logo-block h1 em{font-style:italic;font-weight:400;}
   .logo-block p{font-size:10px;letter-spacing:0.2em;color:var(--accent);text-transform:uppercase;font-weight:600;margin:4px 0 0;}
