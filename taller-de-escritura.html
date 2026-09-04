@@ -21,7 +21,7 @@
     <p>Revista Literaria • Comunidad • Historias</p>
   </div>
     <div class="icons">
-    <span>🔍</span><span>✉️</span><span>👤</span>
+    <span>🔍<span class="sr-only">Buscar</span></span><span>✉️<span class="sr-only">Mensajes</span></span><span>👤<span class="sr-only">Mi cuenta</span></span>
     <button id="theme-toggle" aria-pressed="false" title="Cambiar a modo noche">🌙</button>
   </div>
   </div>
@@ -42,7 +42,7 @@
   <svg width="22" height="22" viewBox="0 0 40 40" style="position:absolute;top:-10px;left:6%;transform:rotate(-12deg);pointer-events:none;z-index:2;"><path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="var(--highlight)"/></svg>
   <svg width="16" height="16" viewBox="0 0 40 40" style="position:absolute;top:4%;left:42%;transform:rotate(18deg);pointer-events:none;z-index:2;"><path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="var(--interaction)"/></svg>
   <div class="tl-hero-text">
-    <h2 class="heading tl-title">TALLER<br><span class="tl-italic">de Escritura</span></h2>
+    <h1 class="heading tl-title">TALLER<br><span class="tl-italic">de Escritura</span></h1>
     <p class="body-serif">Recursos, ejercicios y consejos para escritores en todas las etapas del camino. Escribe mejor, cada día, a tu manera.</p>
   </div>
   <div class="tl-hero-img" style="position:relative;">
@@ -126,7 +126,8 @@
 
     <div class="tl-side-card">
       <h4 class="heading">¿Qué necesitas hoy?</h4>
-      <input type="search" placeholder="Buscar ejercicios, consejos, recursos..." class="tl-search">
+      <label for="buscador-taller" class="sr-only">Buscar ejercicios, consejos, recursos</label>
+      <input id="buscador-taller" type="search" placeholder="Buscar ejercicios, consejos, recursos..." class="tl-search">
       <p class="tl-tags-label">Etiquetas populares</p>
       <div class="tl-tags">
         <span>Diálogo</span><span>Personajes</span><span>Descripción</span><span>Trama</span>
@@ -142,7 +143,8 @@
     <h4 style="margin:0;text-transform:uppercase;font-size:13px;letter-spacing:.05em;">Escribe mejor, con compañía</h4>
     <p class="body-serif" style="font-size:14px;color:var(--ink-soft);margin:10px 0 20px;">Recibe cada semana ejercicios, consejos y recursos exclusivos en tu correo.</p>
     <form onsubmit="return false;" style="display:flex;gap:0;">
-      <input type="email" placeholder="Tu correo aquí..." style="flex:1;padding:12px 14px;border:1px solid var(--line);border-radius:4px 0 0 4px;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;">
+      <label for="newsletter-email-taller" class="sr-only">Tu correo aquí</label>
+      <input id="newsletter-email-taller" type="email" placeholder="Tu correo aquí..." style="flex:1;padding:12px 14px;border:1px solid var(--line);border-radius:4px 0 0 4px;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;">
       <button class="btn-primary" style="border-radius:0 4px 4px 0;white-space:nowrap;">Suscribirme</button>
     </form>
   </div>

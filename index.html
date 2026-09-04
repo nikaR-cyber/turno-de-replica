@@ -19,7 +19,7 @@
       <p>Revista Literaria • Comunidad • Historias</p>
     </div>
     <div class="icons">
-      <span>🔍</span><span>✉️</span><span>👤</span>
+      <span>🔍<span class="sr-only">Buscar</span></span><span>✉️<span class="sr-only">Mensajes</span></span><span>👤<span class="sr-only">Mi cuenta</span></span>
       <button id="theme-toggle" aria-pressed="false" title="Cambiar a modo noche">🌙</button>
     </div>
   </div>
@@ -41,9 +41,9 @@
   <svg class="deco-star star-2" viewBox="0 0 40 40"><path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="var(--interaction)"/></svg>
   <svg class="deco-star star-3" viewBox="0 0 40 40"><path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="var(--accent)"/></svg>
   <div>
-    <h2 class="heading">Historias que<br>inspiran, <span class="deco-word">comunidad
+    <h1 class="heading">Historias que<br>inspiran, <span class="deco-word">comunidad
       <svg class="deco-underline" viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M2 12 Q 50 2, 100 12 T 198 10" stroke="var(--accent)" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
-    </span><br>que permanece.</h2>
+    </span><br>que permanece.</h1>
     <p class="deco-p-wrap">Revista, charlas, talleres y comunidad para lectores, autores y amantes de la literatura.
       <svg class="deco-arrow" viewBox="0 0 60 50"><path d="M50 2 Q 15 10, 12 45" stroke="var(--secondary)" stroke-width="2.5" fill="none" stroke-linecap="round" marker-end="url(#arrowhead)"/><defs><marker id="arrowhead" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--secondary)"/></marker></defs></svg>
     </p>
@@ -53,6 +53,8 @@
     </div>
   </div>
 
+  <!-- AVISO: los 6 enlaces de abajo están colocados a mano según ESTA imagen exacta.
+       Si se sube una portada-revista.png nueva, avisar a Claude antes para recalcular las posiciones. -->
   <div class="portada-wrap">
     <img src="images/uploads/portada-revista.png" alt="Portada Turno de Réplica — La Trama, El Drama, Museo Literario, Taller de Escritura, Ecos de Papel, El Corcho" class="portada-img">
     <a class="portada-link" href="la-trama-y-el-drama.html#trama" style="top:32.0%;left:10%;width:80%;height:9.8%;" title="La Trama"></a>
@@ -137,7 +139,8 @@
     </div>
     <p class="body-serif" style="font-size:14px;color:var(--ink-soft);margin:10px 0 20px;">Historias, recomendaciones y un poquito de magia.</p>
     <form onsubmit="return false;" style="display:flex;gap:0;">
-      <input type="email" placeholder="Tu correo electrónico" style="flex:1;padding:12px 14px;border:1px solid var(--line);border-radius:4px 0 0 4px;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;">
+      <label for="newsletter-email-home" class="sr-only">Tu correo electrónico</label>
+      <input id="newsletter-email-home" type="email" placeholder="Tu correo electrónico" style="flex:1;padding:12px 14px;border:1px solid var(--line);border-radius:4px 0 0 4px;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;">
       <button class="btn-primary" style="border-radius:0 4px 4px 0;white-space:nowrap;">Suscribirme</button>
     </form>
   </div>

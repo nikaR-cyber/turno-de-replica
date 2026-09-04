@@ -15,7 +15,7 @@
 <style>
   .sala-wrap{max-width:760px;margin:48px auto;padding:0 32px;}
   .sala-box{background:var(--card-purple-alt,var(--card));border-radius:14px;padding:32px;}
-  .sala-box h2{margin:0 0 6px;}
+  .sala-box h1{margin:0 0 6px;}
   .sala-box .sub{color:var(--ink-soft);font-size:14px;margin:0 0 24px;}
   .sala-normas{list-style:none;margin:0 0 24px;padding:0;display:flex;flex-direction:column;gap:12px;}
   .sala-normas li{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--ink);}
@@ -37,7 +37,7 @@
     <p>Revista Literaria • Comunidad • Historias</p>
   </div>
     <div class="icons">
-    <span>🔍</span><span>✉️</span><span>👤</span>
+    <span>🔍<span class="sr-only">Buscar</span></span><span>✉️<span class="sr-only">Mensajes</span></span><span>👤<span class="sr-only">Mi cuenta</span></span>
     <button id="theme-toggle" aria-pressed="false" title="Cambiar a modo noche">🌙</button>
   </div>
   </div>
@@ -58,7 +58,7 @@
 
   <div id="rules-box" class="sala-box">
     <span class="eyebrow">🎙️ Ecos de Papel</span>
-    <h2 class="heading">Sala de voz</h2>
+    <h1 class="heading">Sala de voz</h1>
     <p class="sub">Antes de entrar, lee y acepta las normas de convivencia.</p>
 
     <ul class="sala-normas">

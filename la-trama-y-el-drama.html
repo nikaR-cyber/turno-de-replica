@@ -20,7 +20,7 @@
     <p>Revista Literaria • Comunidad • Historias</p>
   </div>
     <div class="icons">
-    <span>🔍</span><span>✉️</span><span>👤</span>
+    <span>🔍<span class="sr-only">Buscar</span></span><span>✉️<span class="sr-only">Mensajes</span></span><span>👤<span class="sr-only">Mi cuenta</span></span>
     <button id="theme-toggle" aria-pressed="false" title="Cambiar a modo noche">🌙</button>
   </div>
   </div>
@@ -42,7 +42,7 @@
   <svg width="16" height="16" viewBox="0 0 40 40" style="position:absolute;top:10%;right:12%;transform:rotate(14deg);pointer-events:none;z-index:2;"><path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="var(--interaction)"/></svg>
   <div class="td-hero-deco">🌸✦</div>
   <div class="td-hero-text">
-    <h2 class="heading td-title">LA TRAMA<br><span class="drama-word">Y EL DRAMA</span></h2>
+    <h1 class="heading td-title">LA TRAMA<br><span class="drama-word">Y EL DRAMA</span></h1>
     <p class="body-serif">Lo que está pasando en el mundo literario. Noticias, lanzamientos, polémicas y todo lo que da de qué hablar.</p>
   </div>
 </section>
@@ -143,7 +143,8 @@
     </div>
     <p class="body-serif" style="font-size:14px;color:var(--ink-soft);margin:10px 0 20px;">Suscríbete y recibe cada semana lo más interesante de La Trama y El Drama.</p>
     <form onsubmit="return false;" style="display:flex;gap:0;">
-      <input type="email" placeholder="Tu correo aquí..." style="flex:1;padding:12px 14px;border:1px solid var(--line);border-radius:4px 0 0 4px;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;">
+      <label for="newsletter-email-td" class="sr-only">Tu correo aquí</label>
+      <input id="newsletter-email-td" type="email" placeholder="Tu correo aquí..." style="flex:1;padding:12px 14px;border:1px solid var(--line);border-radius:4px 0 0 4px;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;">
       <button class="btn-primary" style="border-radius:0 4px 4px 0;white-space:nowrap;">Suscribirme</button>
     </form>
   </div>

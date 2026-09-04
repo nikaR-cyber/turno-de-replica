@@ -6,13 +6,31 @@
 <meta name="color-scheme" content="light dark">
 <title>El Corcho — Turno de Réplica</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="home-estilos.css">
 <link rel="stylesheet" href="cookies-estilos.css">
 <link rel="stylesheet" href="trama-drama-estilos.css">
 <link rel="stylesheet" href="taller-estilos.css">
-<link rel="stylesheet" href="plaza-estilos.css">
-<link rel="stylesheet" href="corcho-estilos.css">
+<style>
+  :root{ --corcho-color:#9C6F3D; }
+  .ec-hero-simple{max-width:1600px;margin:0 auto;padding:48px 32px 0;position:relative;}
+  .ec-hero-simple h1{font-size:44px;margin:0 0 10px;}
+  .ec-hero-simple p{color:var(--ink-soft);max-width:520px;line-height:1.6;margin:0 0 24px;}
+  .corcho-disclaimer{max-width:1600px;margin:0 auto;padding:0 32px;}
+  .corcho-disclaimer p{background:var(--card-alt);border-radius:8px;padding:12px 18px;font-size:13px;color:var(--ink-soft);}
+  .corcho-filtros{max-width:1600px;margin:24px auto 0;padding:0 32px;display:flex;flex-wrap:wrap;gap:10px;}
+  .corcho-filtro{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:8px 16px;font-size:13px;cursor:pointer;}
+  .corcho-filtro.active{background:var(--corcho-color);color:#fff;border-color:var(--corcho-color);}
+  .corcho-grid{max-width:1600px;margin:24px auto 0;padding:0 32px 48px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  @media (max-width:900px){ .corcho-grid{grid-template-columns:1fr;} }
+  .corcho-card{background:var(--card);border-radius:12px;padding:22px;position:relative;}
+  .corcho-card::before{content:"📌";position:absolute;top:-12px;left:20px;font-size:20px;}
+  .corcho-tag{display:inline-block;background:var(--corcho-color);color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;padding:4px 10px;border-radius:4px;margin-bottom:10px;}
+  .corcho-card h3{font-size:17px;margin:0 0 8px;font-family:'Cormorant',serif;}
+  .corcho-card p{font-size:14px;color:var(--ink-soft);line-height:1.5;margin:0 0 14px;}
+  .corcho-meta{display:flex;justify-content:space-between;font-size:12px;color:var(--ink-mute);border-top:1px solid var(--line);padding-top:10px;}
+  .corcho-nueva{max-width:1600px;margin:0 auto 48px;padding:0 32px;text-align:center;}
+</style>
 </head>
 <body>
 
@@ -23,7 +41,7 @@
     <p>Revista Literaria • Comunidad • Historias</p>
   </div>
     <div class="icons">
-    <span>🔍</span><span>✉️</span><span>👤</span>
+    <span>🔍<span class="sr-only">Buscar</span></span><span>✉️<span class="sr-only">Mensajes</span></span><span>👤<span class="sr-only">Mi cuenta</span></span>
     <button id="theme-toggle" aria-pressed="false" title="Cambiar a modo noche">🌙</button>
   </div>
   </div>
@@ -40,94 +58,66 @@
   </details>
 </header>
 
-<p class="pz-disclaimer">🚧 Vista de diseño con anuncios de relleno — el formulario de envío aún no está conectado.</p>
+<div class="corcho-disclaimer">
+  <p>🚧 Vista de diseño — la publicación real de anuncios llegará con Decap CMS. Los anuncios que ves aquí son de ejemplo.</p>
+</div>
 
-<section class="co-hero">
-  <h2 class="co-title">El Corcho</h2>
-  <p class="co-sub">Conecta, colabora y descubre.</p>
-  <a href="#" class="btn-primary co-cta">📌 Colgar mi anuncio</a>
+<section class="ec-hero-simple">
+  <h1 class="heading">📌 El Corcho</h1>
+  <p class="body-serif">El tablón de anuncios de la comunidad: busca compañera de escritura, ofrece intercambios, lanza sorteos o encuentra colaboraciones.</p>
 </section>
 
-<section class="co-filtros">
-  <button class="pz-filtro-btn active">Todas</button>
-  <button class="pz-filtro-btn">💌 Pen Pals</button>
-  <button class="pz-filtro-btn">📖 Lectores Beta / Autores</button>
-  <button class="pz-filtro-btn">🚩 Búsqueda de Clichés</button>
-  <button class="pz-filtro-btn">🤝 Colaboraciones</button>
-  <button class="pz-filtro-btn">🎁 Sorteos y Concursos</button>
-</section>
+<div class="corcho-filtros">
+  <span class="corcho-filtro active">Todos</span>
+  <span class="corcho-filtro">Pen Pals</span>
+  <span class="corcho-filtro">Lectores Beta / Autores</span>
+  <span class="corcho-filtro">Búsqueda de Clichés</span>
+  <span class="corcho-filtro">Colaboraciones</span>
+  <span class="corcho-filtro">Sorteos y Concursos</span>
+</div>
 
-<section class="co-grid">
-
-  <article class="co-card penpal">
-    <span class="co-tag">💌 Pen Pals</span>
-    <h3>Busco amiga por correspondencia literaria</h3>
-    <p>Me encanta escribir cartas de verdad, con tinta y todo. Hablemos de libros, de la vida, de lo que sea. Fantasía y romance, sobre todo.</p>
-    <div class="co-user"><div class="pz-avatar">🙂</div><span>@cartasentre_paginas</span></div>
-    <a href="#" class="co-btn">Contactar →</a>
+<div class="corcho-grid">
+  <article class="corcho-card">
+    <span class="corcho-tag">Pen Pals</span>
+    <h3>Busco compañera de escritura para intercambiar capítulos</h3>
+    <p>Escribo fantasía romántica, busco alguien con quien comentar avances cada semana y darnos ánimos mutuos.</p>
+    <div class="corcho-meta"><span>@Lunaescribe</span><span>Hace 2 días</span></div>
   </article>
-
-  <article class="co-card beta">
-    <span class="co-tag">📖 Lector Beta</span>
-    <h3>Busco lector beta para Romantasy oscura</h3>
-    <p>Tengo un manuscrito de 80k palabras. Mucha tensión, enemies to lovers. Busco feedback sincero. Intercambio disponible.</p>
-    <div class="co-user"><div class="pz-avatar">🙂</div><span>@escribiendo_ando</span></div>
-    <a href="#" class="co-btn">Contactar →</a>
+  <article class="corcho-card">
+    <span class="corcho-tag">Lectores Beta / Autores</span>
+    <h3>Busco lectoras beta para novela de 90k palabras</h3>
+    <p>Dark romance con spice moderado. Necesito feedback sobre ritmo y consistencia de personajes antes de enviarla a editoriales.</p>
+    <div class="corcho-meta"><span>@EscritoraDeMadrugada</span><span>Hace 4 días</span></div>
   </article>
-
-  <article class="co-card cliche">
-    <span class="co-tag">🚩 Busco Cliché</span>
-    <h3>¿Alguien recomienda "solo hay una cama"?</h3>
-    <p>Necesito una dosis urgente de este trope. Da igual el género, solo quiero sufrir un poco. Aceptando recomendaciones ya mismo.</p>
-    <div class="co-user"><div class="pz-avatar">🙂</div><span>@marea_de_letras</span></div>
-    <a href="#" class="co-btn">Ver más →</a>
+  <article class="corcho-card">
+    <span class="corcho-tag">Búsqueda de Clichés</span>
+    <h3>¿Alguien recuerda un libro con este cliché tan concreto?</h3>
+    <p>Enemies to lovers, ella es escritora fantasma de él, ambientada en un crucero. ¡Llevo semanas buscándolo!</p>
+    <div class="corcho-meta"><span>@CazadoraDeTramas</span><span>Hace 5 días</span></div>
   </article>
-
-  <article class="co-card colab">
-    <span class="co-tag">🤝 Colaboración</span>
-    <h3>Ilustradora busca autora para proyecto conjunto</h3>
-    <p>Hago portadas e ilustraciones de estilo pintura digital. Busco una historia corta de fantasía para ilustrar juntas, sin prisa.</p>
-    <div class="co-user"><div class="pz-avatar">🙂</div><span>@paginas_y_pinceles</span></div>
-    <a href="#" class="co-btn">Contactar →</a>
+  <article class="corcho-card">
+    <span class="corcho-tag">Colaboraciones</span>
+    <h3>BookToker busca autoras para reseñar en formato reel</h3>
+    <p>Hago contenido de fantasía y romantasy en TikTok, busco autoras independientes para colaboración sin coste.</p>
+    <div class="corcho-meta"><span>@EntreLibrosyCafé</span><span>Hace 1 semana</span></div>
   </article>
-
-  <article class="co-card sorteo">
-    <span class="co-tag">🎁 Sorteo</span>
-    <h3>Sorteo: 3 ejemplares de "El bosque de los recuerdos"</h3>
-    <p>Para celebrar que hemos llegado a 1.000 seguidoras, sorteamos 3 copias firmadas. Solo tienes que comentar tu escena favorita del libro.</p>
-    <div class="co-user"><div class="pz-avatar">🙂</div><span>@entrelibrosconana</span></div>
-    <a href="#" class="co-btn">Participar →</a>
+  <article class="corcho-card">
+    <span class="corcho-tag">Sorteos y Concursos</span>
+    <h3>Sorteo de 3 ejemplares firmados por San Jordi</h3>
+    <p>Para celebrar el lanzamiento, sorteamos 3 copias físicas dedicadas entre quienes comenten su libro favorito del año.</p>
+    <div class="corcho-meta"><span>@NikaR_autora</span><span>Hace 1 semana</span></div>
   </article>
-
-  <article class="co-card beta">
-    <span class="co-tag">📖 Autor busca club</span>
-    <h3>Autora autopublicada busca club de lectura</h3>
-    <p>Mi novela lleva un año publicada y me encantaría que un club la leyera y debatiera. Puedo estar presente en la charla final.</p>
-    <div class="co-user"><div class="pz-avatar">🙂</div><span>@nika_r_autora</span></div>
-    <a href="#" class="co-btn">Contactar →</a>
+  <article class="corcho-card">
+    <span class="corcho-tag">Pen Pals</span>
+    <h3>Grupo de escritura los domingos por Discord</h3>
+    <p>Nos juntamos a escribir en silencio 1h y luego comentamos avances. Ambiente tranquilo, sin presión ni juicios.</p>
+    <div class="corcho-meta"><span>@PlumasDeMedianoche</span><span>Hace 2 semanas</span></div>
   </article>
+</div>
 
-  <article class="co-card penpal">
-    <span class="co-tag">💌 Pen Pals</span>
-    <h3>Grupo de lectura conjunta por Discord</h3>
-    <p>Somos 4 y buscamos una quinta para nuestro club informal de fantasía juvenil. Leemos un libro al mes, sin presión ni deadlines.</p>
-    <div class="co-user"><div class="pz-avatar">🙂</div><span>@paginas_y_palomitas</span></div>
-    <a href="#" class="co-btn">Contactar →</a>
-  </article>
-
-  <article class="co-card colab">
-    <span class="co-tag">🤝 Colaboración</span>
-    <h3>Podcaster busca autoras para entrevistar</h3>
-    <p>Tengo un podcast pequeñito sobre literatura independiente. Busco autoras autopublicadas con ganas de contar su proceso creativo.</p>
-    <div class="co-user"><div class="pz-avatar">🙂</div><span>@voces_entre_lineas</span></div>
-    <a href="#" class="co-btn">Contactar →</a>
-  </article>
-
-</section>
-
-<section class="co-trust">
-  <p>🛡️ Todos los anuncios de El Corcho son revisados por el equipo de Turno de Réplica para garantizar un espacio seguro y libre de spam.</p>
-</section>
+<div class="corcho-nueva">
+  <button class="btn-primary" style="background:var(--corcho-color);">+ PUBLICAR UN ANUNCIO →</button>
+</div>
 
 <footer>
   <div class="footer-links">
