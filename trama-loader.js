@@ -1,6 +1,13 @@
-// trama-loader.js — rellena la-trama.html con las entradas reales de content/trama-y-drama.json
+// trama-loader.js — rellena la-trama.html con las entradas de content/trama-y-drama.json
+// que pertenezcan a una categoría de La Trama (el mismo archivo también contiene El Drama).
 (function () {
   var JSON_PATH = 'content/trama-y-drama.json';
+
+  var CATEGORIAS_TRAMA = [
+    '📚 Novedades editoriales', '🔮 Lo que viene', '👀 En el radar', '🔥 El fenómeno',
+    '✍️ Entre autores', '🏛️ Mundo editorial', '🎬 Del libro a la pantalla',
+    '📈 Qué está leyendo todo el mundo', '💌 Próxima parada: librería'
+  ];
 
   document.addEventListener('DOMContentLoaded', function () {
     var grid = document.getElementById('lt-grid');
@@ -8,7 +15,9 @@
 
     ctFetchJSON(JSON_PATH)
       .then(function (data) {
-        var entries = ctPublishedSorted(data.entries);
+        var entries = ctPublishedSorted(data.entries).filter(function (e) {
+          return CATEGORIAS_TRAMA.indexOf(e.eyebrow) !== -1;
+        });
         if (!entries.length) return; // sin entradas: se deja el contenido de respaldo del HTML
         grid.innerHTML = '';
         entries.forEach(function (e) {

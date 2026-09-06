@@ -1,6 +1,14 @@
-// drama-loader.js — rellena el-drama.html con las entradas reales de content/club-de-la-trama-y-el-drama.json
+// drama-loader.js — rellena el-drama.html con las entradas de content/trama-y-drama.json
+// que pertenezcan a una categoría de El Drama (el mismo archivo también contiene La Trama).
 (function () {
-  var JSON_PATH = 'content/club-de-la-trama-y-el-drama.json';
+  var JSON_PATH = 'content/trama-y-drama.json';
+
+  var CATEGORIAS_DRAMA = [
+    '☕ El Salseo Literario', '🔥 Arde BookTok', '👀 ¿Pero qué ha pasado aquí?',
+    '⚔️ Guerra de Fandoms', '💀 Opiniones que nadie pidió', '🚩 Red Flags literarias',
+    '💚 Green Flags', '🫣 Confesionario lector', '⚖️ Se abre el debate',
+    '📢 La sentencia de la semana', '🗣️ ¿Soy la única?'
+  ];
 
   document.addEventListener('DOMContentLoaded', function () {
     var grid = document.getElementById('lt-grid');
@@ -8,7 +16,9 @@
 
     ctFetchJSON(JSON_PATH)
       .then(function (data) {
-        var entries = ctPublishedSorted(data.entries);
+        var entries = ctPublishedSorted(data.entries).filter(function (e) {
+          return CATEGORIAS_DRAMA.indexOf(e.eyebrow) !== -1;
+        });
         if (!entries.length) return;
         grid.innerHTML = '';
         entries.forEach(function (e) {
