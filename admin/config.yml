@@ -48,7 +48,14 @@ collections:
             fields:
               - {label: "Título", name: "title", widget: "string", required: false}
               - {label: "Autor/a", name: "author", widget: "string", required: false}
+              - {label: "Biografía breve del autor/a", name: "author_bio", widget: "text", required: false, hint: "2-3 líneas. Se muestra junto a la ficha del libro."}
               - {label: "Portada", name: "cover", widget: "image", required: false}
+              - {label: "Géneros", name: "genres", widget: "string", required: false, hint: "Separados por comas. Ej. Fantasía, Misterio, Romance"}
+              - {label: "Sinopsis corta", name: "synopsis", widget: "text", required: false}
+              - {label: "Progreso de lectura (%)", name: "progress_percent", widget: "number", value_type: "int", min: 0, max: 100, default: 0, hint: "De 0 a 100. Mueve este número cada semana para actualizar la barra de progreso."}
+              - {label: "Capítulos de esta semana", name: "current_chapters", widget: "string", required: false, hint: "Ej. capítulos 41 al 50"}
+              - {label: "Spoilers hasta el capítulo", name: "spoiler_until", widget: "string", required: false, hint: "Ej. el capítulo 40"}
+              - {label: "Enlace a la ficha del libro", name: "book_link", widget: "string", required: false}
           - label: "Próxima lectura"
             name: "next_reading"
             widget: "object"
@@ -57,15 +64,38 @@ collections:
               - {label: "Título", name: "title", widget: "string", required: false}
               - {label: "Autor/a", name: "author", widget: "string", required: false}
               - {label: "Fecha de inicio", name: "date", widget: "string", required: false, hint: "Ej. Septiembre 2026"}
-          - label: "Lecturas anteriores"
-            name: "previous_readings"
+          - label: "Calendario de lectura"
+            name: "reading_calendar"
             widget: "list"
             required: false
-            label_singular: "Lectura"
-            summary: "{{title}}"
+            label_singular: "Semana"
+            summary: "{{label}}"
+            hint: "El orden de esta lista es el orden en que se muestran en la web. Usa 'Subir/Bajar' para reordenar."
+            fields:
+              - {label: "Nombre (ej. Semana 1, o Cierre y charla en directo)", name: "label", widget: "string"}
+              - {label: "Icono (un emoji, opcional)", name: "icon", widget: "string", required: false, default: "📖"}
+              - {label: "Capítulos o descripción", name: "chapters", widget: "string", hint: "Ej. Capítulos 1 al 10, o Llamada de voz en Discord"}
+              - {label: "Fechas", name: "dates", widget: "string", hint: "Ej. 2–8 AGO"}
+              - label: "Estado"
+                name: "status"
+                widget: "select"
+                options: ["Sin marcar", "Completada", "En curso"]
+                default: "Sin marcar"
+                hint: "'Completada' muestra un check ✓. 'En curso' muestra un círculo ○. 'Sin marcar' no muestra nada (útil para el evento de cierre)."
+          - label: "Nuestra Biblioteca de Ecos (libros ya leídos)"
+            name: "biblioteca"
+            widget: "list"
+            required: false
+            label_singular: "Libro leído"
+            summary: "{{title}} — {{month_year}}"
+            hint: "Añade aquí un libro en cuanto el club termine de leerlo. El más reciente ponlo el primero de la lista."
             fields:
               - {label: "Título", name: "title", widget: "string"}
-              - {label: "Autor/a", name: "author", widget: "string", required: false}
+              - {label: "Autor/a", name: "author", widget: "string"}
+              - {label: "Mes y año", name: "month_year", widget: "string", hint: "Ej. Julio 2026"}
+              - {label: "Género", name: "genre", widget: "string", hint: "Ej. Fantasía, Romance, Thriller..."}
+              - {label: "Portada (imagen)", name: "cover_image", widget: "image", required: false, hint: "Si no subes portada, se usará el color de abajo como fondo."}
+              - {label: "Color de fondo (si no hay portada)", name: "cover_color", widget: "string", required: false, default: "#C9A6D8", hint: "Código de color, ej. #C9A6D8"}
           - label: "Anuncios del corcho"
             name: "announcements"
             widget: "list"
