@@ -1,15 +1,36 @@
 {
   "discord_url": "",
   "current_reading": {
-    "title": "",
-    "author": "",
-    "cover": ""
+    "title": "El bosque de los recuerdos",
+    "author": "Alicia Navarro",
+    "author_bio": "",
+    "cover": "",
+    "genres": "Fantasía, Misterio, Romance",
+    "synopsis": "Una carta antigua. Un bosque que no existe en los mapas. Y recuerdos que alguien ha intentado enterrar.",
+    "progress_percent": 80,
+    "current_chapters": "capítulos 41 al 50",
+    "spoiler_until": "el capítulo 40",
+    "book_link": "#"
   },
   "next_reading": {
     "title": "",
     "author": "",
     "date": ""
   },
-  "previous_readings": [],
+  "reading_calendar": [
+    { "label": "Semana 1", "icon": "📖", "chapters": "Capítulos 1 al 10", "dates": "2–8 AGO", "status": "Completada" },
+    { "label": "Semana 2", "icon": "📗", "chapters": "Capítulos 11 al 20", "dates": "9–15 AGO", "status": "Completada" },
+    { "label": "Semana 3", "icon": "📘", "chapters": "Capítulos 21 al 30", "dates": "16–22 AGO", "status": "Completada" },
+    { "label": "Semana 4", "icon": "☕", "chapters": "Capítulos 31 al 41", "dates": "23–29 AGO", "status": "En curso" },
+    { "label": "Cierre y charla en directo", "icon": "🎙️", "chapters": "Llamada de voz en Discord", "dates": "30 AGO", "status": "Sin marcar" }
+  ],
+  "biblioteca": [
+    { "title": "Una corte de niebla y furia", "author": "Sarah J. Maas", "month_year": "Julio 2026", "genre": "Fantasía", "cover_image": "", "cover_color": "#C9A6D8" },
+    { "title": "La asistente", "author": "Freida McFadden", "month_year": "Junio 2026", "genre": "Thriller", "cover_image": "", "cover_color": "#1E2A3A" },
+    { "title": "Powerless", "author": "Lauren Roberts", "month_year": "Mayo 2026", "genre": "Fantasía", "cover_image": "", "cover_color": "#2E2A28" },
+    { "title": "Verity", "author": "Colleen Hoover", "month_year": "Abril 2026", "genre": "Romance", "cover_image": "", "cover_color": "#8FA898" },
+    { "title": "El príncipe cruel", "author": "Holly Black", "month_year": "Marzo 2026", "genre": "Fantasía", "cover_image": "", "cover_color": "#B23A48" },
+    { "title": "Haunting Adeline", "author": "H.D. Carlton", "month_year": "Febrero 2026", "genre": "Dark Romance", "cover_image": "", "cover_color": "#3A2E33" }
+  ],
   "announcements": []
 }
