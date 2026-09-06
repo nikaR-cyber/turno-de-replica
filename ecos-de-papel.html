@@ -56,26 +56,27 @@
   <div class="ec-reading">
     <span class="eyebrow">☆ Ahora estamos leyendo</span>
     <div class="ec-reading-body">
-      <div class="ec-book-cover">EL BOSQUE<br>DE LOS<br>RECUERDOS<span>Alicia Navarro</span></div>
+      <div class="ec-book-cover" id="ec-book-cover">EL BOSQUE<br>DE LOS<br>RECUERDOS<span>Alicia Navarro</span></div>
       <div class="ec-reading-info">
-        <h3 class="heading">El bosque de los recuerdos</h3>
-        <p class="ec-author">de Alicia Navarro</p>
-        <div class="ec-tags">
+        <h3 class="heading" id="ec-book-title">El bosque de los recuerdos</h3>
+        <p class="ec-author" id="ec-book-author">de Alicia Navarro</p>
+        <p class="ec-desc" id="ec-author-bio" style="display:none;"></p>
+        <div class="ec-tags" id="ec-book-tags">
           <span>Fantasía</span><span>Misterio</span><span>Romance</span>
         </div>
-        <p class="ec-desc">Una carta antigua. Un bosque que no existe en los mapas. Y recuerdos que alguien ha intentado enterrar.</p>
-        <p class="ec-progress-label">¿En qué punto vamos? <strong>80%</strong></p>
-        <div class="ec-progress-bar"><div class="ec-progress-fill" style="width:80%;"></div></div>
-        <p class="td-meta">Esta semana: capítulos 41 al 50</p>
-        <p class="ec-spoiler-warn">⚠️ Spoilers hasta el capítulo 40</p>
-        <a href="#" class="btn-primary" style="display:inline-block;">VER FICHA DEL LIBRO →</a>
+        <p class="ec-desc" id="ec-book-synopsis">Una carta antigua. Un bosque que no existe en los mapas. Y recuerdos que alguien ha intentado enterrar.</p>
+        <p class="ec-progress-label">¿En qué punto vamos? <strong id="ec-progress-percent">80%</strong></p>
+        <div class="ec-progress-bar"><div class="ec-progress-fill" id="ec-progress-fill" style="width:80%;"></div></div>
+        <p class="td-meta" id="ec-current-chapters">Esta semana: capítulos 41 al 50</p>
+        <p class="ec-spoiler-warn" id="ec-spoiler-warn">⚠️ Spoilers hasta el capítulo 40</p>
+        <a href="#" id="ec-book-link" class="btn-primary" style="display:inline-block;">VER FICHA DEL LIBRO →</a>
       </div>
     </div>
   </div>
 
   <aside class="ec-calendario">
     <span class="eyebrow">📅 Calendario de lectura →</span>
-    <ul class="ec-calendario-list">
+    <ul class="ec-calendario-list" id="ec-calendario-list">
       <li><span class="ec-cal-icon">📖</span><div><strong>Semana 1</strong><span>Capítulos 1 al 10</span></div><em>2–8 AGO</em><span class="ec-check">✓</span></li>
       <li><span class="ec-cal-icon">📗</span><div><strong>Semana 2</strong><span>Capítulos 11 al 20</span></div><em>9–15 AGO</em><span class="ec-check">✓</span></li>
       <li><span class="ec-cal-icon">📘</span><div><strong>Semana 3</strong><span>Capítulos 21 al 30</span></div><em>16–22 AGO</em><span class="ec-check">✓</span></li>
@@ -93,7 +94,7 @@
       <div class="ec-quote">🧚<p>«Yo sabía desde el capítulo 3 que ese personaje escondía algo.»</p><span>— @CazadoraDePistas</span></div>
       <div class="ec-quote">📚<p>«¿Podemos hablar de la tensión entre ellos? Porque yo ya no puedo más.»</p><span>— @TeamEnemigosLovers</span></div>
     </div>
-    <a href="#" class="ver-todo">ÚNETE EN DISCORD Y SIGUE LA CONVERSACIÓN →</a>
+    <a href="#" id="ec-discord-link" class="ver-todo">ÚNETE EN DISCORD Y SIGUE LA CONVERSACIÓN →</a>
   </div>
 
   <div class="ec-como">
@@ -145,7 +146,7 @@
     <button class="ec-filtro">Todas</button>
     <select class="ec-filtro-select"><option>Todos los géneros</option><option>Romance</option><option>Fantasía</option><option>Thriller</option><option>Histórica</option></select>
   </div>
-  <div class="ec-biblio-grid">
+  <div class="ec-biblio-grid" id="ec-biblio-grid">
     <div class="ec-biblio-item"><div class="ec-mini-cover" style="background:#C9A6D8;"></div><span class="ec-mes">Julio 2026</span><h4>Una corte de niebla y furia</h4><p>Sarah J. Maas</p><span class="td-badge trama">Fantasía</span></div>
     <div class="ec-biblio-item"><div class="ec-mini-cover" style="background:#1E2A3A;"></div><span class="ec-mes">Junio 2026</span><h4>La asistente</h4><p>Freida McFadden</p><span class="td-badge drama">Thriller</span></div>
     <div class="ec-biblio-item"><div class="ec-mini-cover" style="background:#2E2A28;"></div><span class="ec-mes">Mayo 2026</span><h4>Powerless</h4><p>Lauren Roberts</p><span class="td-badge trama">Fantasía</span></div>
@@ -169,5 +170,6 @@
 
 <script src="home-tema.js"></script>
 <script src="cookie-consent.js"></script>
+<script src="ecos-loader.js"></script>
 </body>
 </html>
