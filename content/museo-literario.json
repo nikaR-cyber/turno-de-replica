@@ -1,24 +1,38 @@
 {
   "entries": [
     {
-      "eyebrow": "Pieza del mes",
+      "eyebrow": "📌 Pieza del mes",
+      "author": "Nika R.",
+      "text": "Espero de verdad que esto funcione",
+      "featured": true,
+      "published": true,
+      "date": "06/09/2026",
+      "subtitle": "Prueba de que se ha conectado todo",
       "title": "El objeto que inspiró la trama",
-      "text": "Aquí puedes contar la historia real o curiosidad detrás de un objeto, carta o lugar que inspiró alguna de tus novelas."
+      "image": ""
     },
     {
       "eyebrow": "Dato curioso",
       "title": "Lo que no sabías sobre este clásico",
-      "text": "Un espacio para anécdotas de archivo, historia literaria o curiosidades de época que enriquecen la lectura."
+      "text": "Un espacio para anécdotas de archivo, historia literaria o curiosidades de época que enriquecen la lectura.",
+      "published": true,
+      "featured": true,
+      "date": "06/09/2026"
     },
     {
       "eyebrow": "Reliquia",
       "title": "Del archivo a la página",
-      "text": "Cuenta cómo un documento o hallazgo de investigación se transformó en un momento clave de tu historia."
+      "text": "Cuenta cómo un documento o hallazgo de investigación se transformó en un momento clave de tu historia.",
+      "published": true,
+      "featured": true,
+      "date": "06/09/2026"
     },
     {
       "eyebrow": "Curiosidad histórica",
       "title": "Detrás del telón de época",
-      "text": "Detalles de contexto histórico que dan vida al mundo de tus novelas, explicados para tus lectoras."
+      "text": "Detalles de contexto histórico que dan vida al mundo de tus novelas, explicados para tus lectoras.",
+      "published": true,
+      "featured": true
     }
   ]
 }
