@@ -135,6 +135,17 @@ collections:
                   - "🎬 Del libro a la pantalla"
                   - "📈 Qué está leyendo todo el mundo"
                   - "💌 Próxima parada: librería"
+                  - "☕ El Salseo Literario"
+                  - "🔥 Arde BookTok"
+                  - "👀 ¿Pero qué ha pasado aquí?"
+                  - "⚔️ Guerra de Fandoms"
+                  - "💀 Opiniones que nadie pidió"
+                  - "🚩 Red Flags literarias"
+                  - "💚 Green Flags"
+                  - "🫣 Confesionario lector"
+                  - "⚖️ Se abre el debate"
+                  - "📢 La sentencia de la semana"
+                  - "🗣️ ¿Soy la única?"
                 default: "📚 Novedades editoriales"
               - label: "Destacada (franja superior)"
                 name: "featured_banner"
@@ -171,85 +182,6 @@ collections:
               - {label: "Enlace/fuente de la imagen", name: "image_credit_url", widget: "string", required: false, hint: "Opcional. Si lo rellenas, el crédito de arriba será un enlace a esta URL."}
               - {label: "Extracto (resumen para la tarjeta)", name: "text", widget: "text", hint: "Texto corto que se ve en la tarjeta de la sección"}
               - label: "Contenido completo"
-                name: "body"
-                widget: "text"
-                required: false
-                hint: "Si lo dejas vacío, se mostrará el extracto como contenido completo. Deja una línea en blanco entre párrafos. Para insertar una imagen dentro del texto, escribe ![descripción](URL de la imagen) en su propia línea. Para un enlace, escribe [texto del enlace](URL)."
-              - {label: "Etiquetas", name: "tags", widget: "string", required: false, hint: "Separadas por comas"}
-              - label: "Enlaces externos"
-                name: "links"
-                widget: "list"
-                required: false
-                fields:
-                  - {label: "Texto del enlace", name: "label", widget: "string"}
-                  - {label: "URL", name: "url", widget: "string"}
-
-  - name: "club-trama-drama"
-    label: "El Drama"
-    files:
-      - name: "entradas"
-        label: "Entradas de El Drama"
-        file: "content/club-de-la-trama-y-el-drama.json"
-        fields:
-          - label: "Entradas"
-            name: "entries"
-            widget: "list"
-            label_singular: "Entrada"
-            summary: "{{eyebrow}} — {{title}}"
-            fields:
-              - {label: "Publicada", name: "published", widget: "boolean", default: true, hint: "Desmarca para ocultarla de la web sin borrarla"}
-              - {label: "Destacada (aparece primero en la sección)", name: "featured", widget: "boolean", default: false}
-              - label: "Categoría"
-                name: "eyebrow"
-                widget: "select"
-                options:
-                  - "☕ El Salseo Literario"
-                  - "🔥 Arde BookTok"
-                  - "👀 ¿Pero qué ha pasado aquí?"
-                  - "⚔️ Guerra de Fandoms"
-                  - "💀 Opiniones que nadie pidió"
-                  - "🚩 Red Flags literarias"
-                  - "💚 Green Flags"
-                  - "🫣 Confesionario lector"
-                  - "⚖️ Se abre el debate"
-                  - "📢 La sentencia de la semana"
-                  - "🗣️ ¿Soy la única?"
-                default: "☕ El Salseo Literario"
-              - label: "Destacada (franja superior)"
-                name: "featured_banner"
-                widget: "select"
-                required: false
-                hint: "Elige en cuál de los 5 huecos destacados de la home de esta sección aparece esta entrada. Deja 'Ninguna' si no debe aparecer ahí."
-                options:
-                  - "Ninguna"
-                  - "Hoy está ardiendo"
-                  - "Todo el mundo está hablando de..."
-                  - "El debate"
-                  - "Lo que viene"
-                  - "El salseo de la semana"
-                default: "Ninguna"
-              - {label: "Título", name: "title", widget: "string"}
-              - {label: "Subtítulo o entradilla", name: "subtitle", widget: "string", required: false}
-              - {label: "URL (slug)", name: "slug", widget: "string", required: false, hint: "Déjalo vacío y se genera solo a partir del título. Solo edítalo si quieres una URL concreta."}
-              - {label: "Autor/a", name: "author", widget: "string", required: false}
-              - {label: "Fecha", name: "date", widget: "datetime", required: false, format: "DD/MM/YYYY"}
-              - {label: "Imagen destacada", name: "image", widget: "image", required: false}
-              - label: "Origen de la imagen"
-                name: "image_source"
-                widget: "select"
-                required: false
-                hint: "Uso interno, para poder aplicar más adelante las obligaciones de transparencia que correspondan. No se muestra automáticamente en la web."
-                options:
-                  - "Fotografía propia"
-                  - "Fotografía con licencia"
-                  - "Ilustración propia"
-                  - "Generada mediante IA"
-                  - "Generada o manipulada mediante IA"
-                  - "Otra"
-              - {label: "Crédito/atribución de la imagen", name: "image_credit", widget: "string", required: false, hint: "Ej. 'Foto: María López'. Si lo rellenas, aparecerá bajo la imagen en la página de la entrada."}
-              - {label: "Enlace/fuente de la imagen", name: "image_credit_url", widget: "string", required: false, hint: "Opcional. Si lo rellenas, el crédito de arriba será un enlace a esta URL."}
-              - {label: "Extracto (resumen para la tarjeta)", name: "text", widget: "text", hint: "Texto corto que se ve en la tarjeta de la sección"}
-              - label: "Texto enriquecido"
                 name: "body"
                 widget: "text"
                 required: false
