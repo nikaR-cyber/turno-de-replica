@@ -118,7 +118,7 @@ collections:
             name: "entries"
             widget: "list"
             label_singular: "Entrada"
-            summary: "{{title}}"
+            summary: "{{eyebrow}} — {{title}}"
             fields:
               - {label: "Publicada", name: "published", widget: "boolean", default: true, hint: "Desmarca para ocultarla de la web sin borrarla"}
               - {label: "Destacada (aparece primero en la sección)", name: "featured", widget: "boolean", default: false}
@@ -195,7 +195,7 @@ collections:
             name: "entries"
             widget: "list"
             label_singular: "Entrada"
-            summary: "{{title}}"
+            summary: "{{eyebrow}} — {{title}}"
             fields:
               - {label: "Publicada", name: "published", widget: "boolean", default: true, hint: "Desmarca para ocultarla de la web sin borrarla"}
               - {label: "Destacada (aparece primero en la sección)", name: "featured", widget: "boolean", default: false}
@@ -274,7 +274,7 @@ collections:
             name: "entries"
             widget: "list"
             label_singular: "Entrada"
-            summary: "{{title}}"
+            summary: "{{eyebrow}} — {{title}}"
             fields:
               - {label: "Publicada", name: "published", widget: "boolean", default: true, hint: "Desmarca para ocultarla de la web sin borrarla"}
               - {label: "Destacada (aparece primero en la sección)", name: "featured", widget: "boolean", default: false}
@@ -341,7 +341,7 @@ collections:
             name: "entries"
             widget: "list"
             label_singular: "Entrada"
-            summary: "{{title}}"
+            summary: "{{eyebrow}} — {{title}}"
             fields:
               - {label: "Publicada", name: "published", widget: "boolean", default: true, hint: "Desmarca para ocultarla de la web sin borrarla"}
               - {label: "Destacada", name: "featured", widget: "boolean", default: false, hint: "Las destacadas aparecen primero en la sección"}
@@ -392,7 +392,7 @@ collections:
             name: "entries"
             widget: "list"
             label_singular: "Anuncio"
-            summary: "{{title}} — {{published}}"
+            summary: "{{category}} — {{title}}"
             fields:
               - label: "Publicado (visible en la web)"
                 name: "published"
