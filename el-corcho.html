@@ -67,22 +67,35 @@
   <p class="body-serif">El tablón de anuncios de la comunidad: busca compañera de escritura, ofrece intercambios, lanza sorteos o encuentra colaboraciones.</p>
 </section>
 
-<div class="corcho-filtros">
-  <span class="corcho-filtro active">Todos</span>
-  <span class="corcho-filtro">Pen Pals</span>
-  <span class="corcho-filtro">Lectores Beta / Autores</span>
-  <span class="corcho-filtro">Búsqueda de Clichés</span>
-  <span class="corcho-filtro">Colaboraciones</span>
-  <span class="corcho-filtro">Sorteos y Concursos</span>
-</div>
+<style>
+  .corcho-cat-nav{max-width:1600px;margin:32px auto 0;padding:0 32px;display:flex;gap:14px;flex-wrap:wrap;}
+  .corcho-cat-pill{position:relative;flex:1;min-width:140px;display:flex;flex-direction:column;align-items:center;gap:8px;padding:16px 10px 14px;border-radius:4px;color:#fff;text-decoration:none;text-align:center;font-family:'Cormorant',serif;font-size:14px;font-weight:600;transition:.15s;box-shadow:0 6px 14px rgba(0,0,0,.12);}
+  .corcho-cat-pill:hover{transform:translateY(-3px);}
+  .corcho-cat-pill .cc-icon{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;font-size:15px;}
+  .corcho-cat-pill .cc-tape{position:absolute;top:-8px;left:50%;transform:translateX(-50%) rotate(-3deg);width:40px;height:14px;background:var(--highlight);opacity:.85;}
+  .corcho-cat-pill.c1{background:var(--secondary);}
+  .corcho-cat-pill.c2{background:var(--accent);}
+  .corcho-cat-pill.c3{background:var(--plaza-text);}
+  .corcho-cat-pill.c4{background:var(--taller-text);}
+  .corcho-cat-pill.c5{background:var(--ecos-text);}
+  @media (max-width:900px){ .corcho-cat-nav{padding:0 16px;} .corcho-cat-pill{min-width:110px;font-size:12px;} }
+</style>
+
+<nav class="corcho-cat-nav">
+  <a href="el-corcho-anuncio.html" class="corcho-cat-pill c1"><span class="cc-tape"></span><span class="cc-icon">✉️</span>Pen Pals</a>
+  <a href="#" class="corcho-cat-pill c2"><span class="cc-tape" style="background:var(--interaction);"></span><span class="cc-icon">📖</span>Lectores Beta / Autores</a>
+  <a href="#" class="corcho-cat-pill c3"><span class="cc-tape" style="background:var(--marker);"></span><span class="cc-icon">🔍</span>Búsqueda de Clichés</a>
+  <a href="#" class="corcho-cat-pill c4"><span class="cc-tape" style="background:var(--accent);"></span><span class="cc-icon">🤝</span>Colaboraciones</a>
+  <a href="#" class="corcho-cat-pill c5"><span class="cc-tape" style="background:var(--secondary);"></span><span class="cc-icon">🎁</span>Sorteos y Concursos</a>
+</nav>
 
 <div class="corcho-grid">
-  <article class="corcho-card">
+  <a class="corcho-card" href="el-corcho-anuncio.html" style="text-decoration:none;color:inherit;display:block;">
     <span class="corcho-tag">Pen Pals</span>
     <h3>Busco compañera de escritura para intercambiar capítulos</h3>
     <p>Escribo fantasía romántica, busco alguien con quien comentar avances cada semana y darnos ánimos mutuos.</p>
     <div class="corcho-meta"><span>@Lunaescribe</span><span>Hace 2 días</span></div>
-  </article>
+  </a>
   <article class="corcho-card">
     <span class="corcho-tag">Lectores Beta / Autores</span>
     <h3>Busco lectoras beta para novela de 90k palabras</h3>
