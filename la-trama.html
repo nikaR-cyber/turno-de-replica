@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>La Trama — Turno de Réplica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home-estilos.css">
+<link rel="stylesheet" href="cookies-estilos.css">
+<link rel="stylesheet" href="trama-drama-estilos.css">
+<style>
+  .lt-hero{max-width:1600px;margin:0 auto;padding:48px 32px 0;}
+  .lt-breadcrumb{font-size:12px;color:var(--ink-mute);margin-bottom:14px;}
+  .lt-breadcrumb a{color:var(--ink-mute);}
+  .lt-hero h1{font-size:44px;margin:0 0 10px;}
+  .lt-hero p{color:var(--ink-soft);max-width:560px;line-height:1.6;}
+  .td-cat-strip{max-width:1600px;margin:24px auto 0;padding:0 32px;display:flex;flex-wrap:wrap;gap:8px;}
+  .td-cat-chip{display:inline-flex;align-items:center;font-size:13px;font-weight:600;padding:8px 14px;border-radius:20px;color:#fff;text-decoration:none;white-space:nowrap;background:var(--accent-dark);}
+  .td-cat-chip:hover{filter:brightness(1.1);}
+  .lt-grid{max-width:1600px;margin:32px auto 0;padding:0 32px 64px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  @media (max-width:900px){ .lt-grid{grid-template-columns:1fr;} .lt-hero h1{font-size:32px;} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="logo-block">
+    <img src="logo-dia.png" alt="Turno de Réplica" class="site-logo" id="site-logo">
+    <p>Revista Literaria • Comunidad • Historias</p>
+  </div>
+    <div class="icons">
+    <span>🔍<span class="sr-only">Buscar</span></span><span>✉️<span class="sr-only">Mensajes</span></span><span>👤<span class="sr-only">Mi cuenta</span></span>
+    <button id="theme-toggle" aria-pressed="false" title="Cambiar a modo noche">🌙</button>
+  </div>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a><a href="la-trama-y-el-drama.html" class="active">Trama y Drama</a><a href="taller-de-escritura.html">Taller</a><a href="museo-literario.html">Museo</a>
+    <a href="ecos-de-papel.html">Club de Lectura</a><a href="la-plaza-del-marujeo.html">Plaza</a><a href="ficha-de-autor.html">Autores</a><a href="ficha-de-creador.html">Creadores</a><a href="el-corcho.html">El Corcho</a>
+  </nav>
+  <details class="mobile-menu">
+    <summary>☰ Menú</summary>
+    <div class="mobile-menu-list">
+      <a href="index.html">Inicio</a><a href="la-trama-y-el-drama.html">Trama y Drama</a><a href="taller-de-escritura.html">Taller</a><a href="museo-literario.html">Museo</a>
+      <a href="ecos-de-papel.html">Club de Lectura</a><a href="la-plaza-del-marujeo.html">Plaza</a><a href="ficha-de-autor.html">Autores</a><a href="ficha-de-creador.html">Creadores</a><a href="el-corcho.html">El Corcho</a>
+    </div>
+  </details>
+</header>
+
+<section class="lt-hero">
+  <p class="lt-breadcrumb"><a href="la-trama-y-el-drama.html">La Trama y el Drama</a> / La Trama</p>
+  <h1 class="heading">📖 LA TRAMA</h1>
+  <p class="body-serif">Actualidad editorial, lanzamientos, tendencias y todo lo que se mueve en el mundo de los libros.</p>
+</section>
+
+<nav class="td-cat-strip">
+  <a href="la-trama-articulo.html" class="td-cat-chip">📚 Novedades editoriales</a>
+  <a href="#" class="td-cat-chip">🔮 Lo que viene</a>
+  <a href="#" class="td-cat-chip">👀 En el radar</a>
+  <a href="#" class="td-cat-chip">🔥 El fenómeno</a>
+  <a href="#" class="td-cat-chip">✍️ Entre autores</a>
+  <a href="#" class="td-cat-chip">🏛️ Mundo editorial</a>
+  <a href="#" class="td-cat-chip">🎬 Del libro a la pantalla</a>
+  <a href="#" class="td-cat-chip">📈 Qué está leyendo todo el mundo</a>
+  <a href="#" class="td-cat-chip">💌 Próxima parada: librería</a>
+</nav>
+
+<div class="lt-grid">
+  <a href="la-trama-articulo.html" class="td-card" style="text-decoration:none;color:inherit;">
+    <div class="td-card-img" style="background:#DCD3C4;"></div>
+    <span class="td-badge trama">Novedades editoriales</span>
+    <h4>Los lanzamientos editoriales más esperados de junio</h4>
+    <p class="td-meta">Hace 3 horas · 8 min de lectura</p>
+  </a>
+  <a href="#" class="td-card" style="text-decoration:none;color:inherit;">
+    <div class="td-card-img" style="background:#E4DED0;"></div>
+    <span class="td-badge trama">En el radar</span>
+    <h4>5 autoras que van a dar mucho que hablar</h4>
+    <p class="td-meta">Hace 6 horas · 6 min de lectura</p>
+  </a>
+  <a href="#" class="td-card" style="text-decoration:none;color:inherit;">
+    <div class="td-card-img" style="background:#2B2A28;"></div>
+    <span class="td-badge trama">Del libro a la pantalla</span>
+    <h4>Todas las adaptaciones literarias que llegan en 2026</h4>
+    <p class="td-meta">Ayer · 7 min de lectura</p>
+  </a>
+  <a href="#" class="td-card" style="text-decoration:none;color:inherit;">
+    <div class="td-card-img" style="background:#C9BEA6;"></div>
+    <span class="td-badge trama">Mundo editorial</span>
+    <h4>Cambios, fusiones y cierres: lo que pasa en las editoriales</h4>
+    <p class="td-meta">Ayer · 5 min de lectura</p>
+  </a>
+</div>
+
+<section class="newsletter-wrap">
+  <div class="newsletter">
+    <h4 style="margin:0;text-transform:uppercase;font-size:13px;letter-spacing:.05em;">¿No quieres perderte nada de La Trama?</h4>
+    <p class="body-serif" style="font-size:14px;color:var(--ink-soft);margin:10px 0 20px;">Suscríbete y recibe cada semana lo más interesante.</p>
+    <form onsubmit="return false;" style="display:flex;gap:0;">
+      <label for="newsletter-email-lt" class="sr-only">Tu correo aquí</label>
+      <input id="newsletter-email-lt" type="email" placeholder="Tu correo aquí..." style="flex:1;padding:12px 14px;border:1px solid var(--line);border-radius:4px 0 0 4px;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;">
+      <button class="btn-primary" style="border-radius:0 4px 4px 0;white-space:nowrap;">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="sobre-turno-de-replica.html">Sobre Turno de Réplica</a><a href="#">Colaboraciones</a><a href="#">Contacto</a>
+    <a href="aviso-legal.html">Aviso Legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a><a href="terminos.html">Términos</a>
+    <a href="#" id="footer-cookie-settings">Configurar cookies</a>
+  </div>
+  <div class="footer-social">
+    <span>♛</span><span>TikTok</span><span>Discord</span><span>✉️</span><span>★</span>
+  </div>
+  <p class="footer-copy">© 2026 Turno de Réplica. Todos los derechos reservados.</p>
+</footer>
+
+<script src="home-tema.js"></script>
+<script src="cookie-consent.js"></script>
+</body>
+</html>
