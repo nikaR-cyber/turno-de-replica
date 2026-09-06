@@ -40,7 +40,6 @@ collections:
         label: "Club de Lectura Ecos de Papel"
         file: "content/ecos-de-papel.json"
         fields:
-          - {label: "Enlace de invitación a Discord", name: "discord_url", widget: "string", required: false, hint: "Pega aquí el enlace de invitación al servidor de Discord."}
           - label: "Lectura actual"
             name: "current_reading"
             widget: "object"
