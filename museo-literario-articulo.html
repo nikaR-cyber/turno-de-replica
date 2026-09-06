@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>El objeto que inspiró la trama — Museo Literario — Turno de Réplica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home-estilos.css">
+<link rel="stylesheet" href="cookies-estilos.css">
+<link rel="stylesheet" href="trama-drama-estilos.css">
+<link rel="stylesheet" href="taller-estilos.css">
+<link rel="stylesheet" href="museo-estilos.css">
+<style>
+  .art-wrap{max-width:900px;margin:0 auto;padding:40px 32px 64px;position:relative;}
+  .art-breadcrumb{font-size:12px;color:var(--ink-mute);margin-bottom:18px;}
+  .art-breadcrumb a{color:var(--ink-mute);}
+  .art-breadcrumb a:hover{color:var(--accent);}
+
+  .art-badge{display:inline-flex;align-items:center;gap:6px;background:var(--secondary);color:#fff;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;padding:6px 14px;border-radius:3px;margin-bottom:18px;position:relative;}
+  .art-badge::before{content:"";position:absolute;top:-9px;left:14px;width:38px;height:14px;background:var(--highlight);opacity:.85;transform:rotate(-3deg);}
+
+  .art-title{font-size:40px;line-height:1.1;margin:0 0 12px;}
+  .art-meta{font-size:13px;color:var(--ink-mute);margin:0 0 28px;}
+
+  .art-img-wrap{position:relative;margin-bottom:36px;}
+  .art-img-wrap img{width:100%;border-radius:6px;display:block;}
+  .art-img-wrap .washi-tape{top:-12px;left:32px;transform:rotate(-6deg);}
+  .art-img-wrap .washi-tape.t2{top:-12px;right:32px;left:auto;transform:rotate(5deg);background:var(--interaction);}
+
+  .pieza-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:8px;}
+  .pieza-card{background:var(--card-purple-alt,var(--card));border-radius:4px;padding:26px 24px;position:relative;box-shadow:0 6px 14px rgba(0,0,0,.06);}
+  .pieza-card:nth-child(1){transform:rotate(-0.6deg);}
+  .pieza-card:nth-child(2){transform:rotate(0.5deg);}
+  .pieza-card:nth-child(3){transform:rotate(0.4deg);}
+  .pieza-card:nth-child(4){transform:rotate(-0.5deg);}
+  .pieza-card::before{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-3deg);width:46px;height:16px;background:var(--highlight);opacity:.85;}
+  .pieza-card h3{font-size:18px;margin:0 0 10px;color:var(--secondary);}
+  .pieza-card p{font-family:'Inter',serif;font-size:15px;line-height:1.65;color:var(--ink-soft);margin:0;}
+
+  .art-body p{font-family:'Inter',serif;font-size:16px;line-height:1.75;color:var(--ink-soft);}
+
+  .art-tags{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0;}
+  .art-tags span{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:6px 14px;font-size:12px;}
+
+  .art-nav-bottom{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:20px;margin-top:20px;font-size:13px;}
+  .art-nav-bottom a{color:var(--ink-mute);}
+
+  @media (max-width:700px){
+    .pieza-grid{grid-template-columns:1fr;}
+    .art-title{font-size:30px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="logo-block">
+    <img src="logo-dia.png" alt="Turno de Réplica" class="site-logo" id="site-logo">
+    <p>Revista Literaria • Comunidad • Historias</p>
+  </div>
+    <div class="icons">
+    <span>🔍<span class="sr-only">Buscar</span></span><span>✉️<span class="sr-only">Mensajes</span></span><span>👤<span class="sr-only">Mi cuenta</span></span>
+    <button id="theme-toggle" aria-pressed="false" title="Cambiar a modo noche">🌙</button>
+  </div>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a><a href="la-trama-y-el-drama.html">Trama y Drama</a><a href="taller-de-escritura.html">Taller</a><a href="museo-literario.html" class="active">Museo</a>
+    <a href="ecos-de-papel.html">Club de Lectura</a><a href="la-plaza-del-marujeo.html">Plaza</a><a href="ficha-de-autor.html">Autores</a><a href="ficha-de-creador.html">Creadores</a><a href="el-corcho.html">El Corcho</a>
+  </nav>
+  <details class="mobile-menu">
+    <summary>☰ Menú</summary>
+    <div class="mobile-menu-list">
+      <a href="index.html">Inicio</a><a href="la-trama-y-el-drama.html">Trama y Drama</a><a href="taller-de-escritura.html">Taller</a><a href="museo-literario.html">Museo</a>
+      <a href="ecos-de-papel.html">Club de Lectura</a><a href="la-plaza-del-marujeo.html">Plaza</a><a href="ficha-de-autor.html">Autores</a><a href="ficha-de-creador.html">Creadores</a><a href="el-corcho.html">El Corcho</a>
+    </div>
+  </details>
+</header>
+
+<div class="art-wrap">
+
+  <p class="art-breadcrumb"><a href="museo-literario.html">Museo Literario</a> / Pieza del mes</p>
+
+  <span class="art-badge">📌 Pieza del mes</span>
+  <h1 class="heading art-title">El objeto que inspiró la trama</h1>
+  <p class="art-meta">Por Alien · 12 de septiembre de 2026 · 7 min de lectura</p>
+
+  <div class="art-img-wrap">
+    <div class="washi-tape"></div>
+    <div class="washi-tape t2"></div>
+    <img src="https://images.unsplash.com/photo-1533327325824-76bc4e62d560?w=1000&q=60" alt="">
+  </div>
+
+  <div class="pieza-grid">
+    <div class="pieza-card">
+      <h3 class="heading">La obra</h3>
+      <p>Aquí puedes contar la historia real o curiosidad detrás de un objeto, carta o lugar que inspiró alguna de tus novelas.</p>
+    </div>
+    <div class="pieza-card">
+      <h3 class="heading">El contexto</h3>
+      <p>En qué momento histórico o literario surge esta pieza, y por qué importa situarla ahí para entender su significado.</p>
+    </div>
+    <div class="pieza-card">
+      <h3 class="heading">Lo que hay detrás</h3>
+      <p>La anécdota, la curiosidad o la historia oculta que pocas personas conocen sobre este objeto en concreto.</p>
+    </div>
+    <div class="pieza-card">
+      <h3 class="heading">Su legado</h3>
+      <p>Por qué esta pieza sigue importando hoy, y qué huella dejó en la literatura que vino después de ella.</p>
+    </div>
+  </div>
+
+  <p class="td-note" style="margin-top:18px;">* Esta plantilla de 4 apartados es solo para "Pieza del mes". El resto de categorías del Museo (El Datazo, Redescubriendo Vidas, El Viajero) usan un único bloque de texto en vez de estas 4 tarjetas.</p>
+
+  <div class="art-tags">
+    <span>#PiezaDelMes</span><span>#HistoriaLiteraria</span><span>#Curiosidades</span>
+  </div>
+
+  <div class="art-nav-bottom">
+    <a href="museo-literario.html">← Volver al Museo</a>
+    <a href="#">Siguiente pieza →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="sobre-turno-de-replica.html">Sobre Turno de Réplica</a><a href="#">Colaboraciones</a><a href="#">Contacto</a>
+    <a href="aviso-legal.html">Aviso Legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a><a href="terminos.html">Términos</a>
+    <a href="#" id="footer-cookie-settings">Configurar cookies</a>
+  </div>
+  <div class="footer-social">
+    <span>♛</span><span>TikTok</span><span>Discord</span><span>✉️</span><span>★</span>
+  </div>
+  <p class="footer-copy">© 2026 Turno de Réplica. Todos los derechos reservados.</p>
+</footer>
+
+<script src="home-tema.js"></script>
+<script src="cookie-consent.js"></script>
+</body>
+</html>
