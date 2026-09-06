@@ -34,7 +34,7 @@
 
   .deco-star{position:absolute;width:22px;height:22px;pointer-events:none;z-index:2;}
   .star-1{top:8%;left:38%;transform:rotate(-12deg);}
-  .star-2{top:-4%;left:44%;transform:rotate(20deg);}
+  .star-2{top:2%;left:44%;transform:rotate(20deg);}
   .star-3{top:12%;right:26%;width:16px;height:16px;transform:rotate(8deg);}
 
   .deco-word{position:relative;display:inline-block;}
